@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+		<title>Lemon-ui示例》Web组件》导航类组件》导航菜单</title>
+		<link rel="stylesheet" href="../css/index.css" />
+		<!--引入lemon-ui的css -->
+		<link rel="stylesheet" href="../../dist/css/lemon-ui.css" />
+		<!--引用jquery -->
+		<script type="text/javascript" src="../../lib/jquery/jquery.min.js"></script>
+		<!--引入lemon-ui的js -->
+		<script type="text/javascript" src="../../dist/js/lemon-ui.js"></script>
+		<!--引入谷歌的prettify代码高亮插件 -->
+		<script type="text/javascript" src="../../lib/prettify/prettify.js"></script>
+		<!--[if lt IE 9]>
+        <script type="text/javascript" src="../../lib/html5.js"></script>
+		<script type="text/javascript" src="../../lib/respond.min.js"></script>
+		<script type="text/javascript" src="../../lib/PIE_IE678.js"></script>
+        <![endif]-->
+	</head>
+
+	<body>
+		<!--顶部内容-->
+		<div class="content-navbar">
+			<span class="breadcrumb">
+				<a href="javascript:void(0);" class="first"><i class="le le-shouye font-13" style="color:#333;"></i>首页</a>
+				<a href="javascript:void(0);" class="second">Web组件</a>
+				<a href="javascript:void(0);" class="third">导航类组件</a>
+                <a class="fourth current">导航菜单</a>
+			</span>
+		</div>
+		<!--页面主要内容-->
+		<div class="main-content-demo">
+
+			<h1>导航菜单</h1>
+			<hr>
+
+			<h2>1. 水平导航</h2>
+			<div>水平导航菜单适用于网站顶部导航，目前只支持到二级菜单，需要引用<code>.navigation .navigation-menu</code>两个样式，<code>.navigation-menu</code> 代表是水平导航菜单，如果需要设置当前选中的样式，则需要在
+				<code>li元素</code>中引用<code>.current</code>样式，二级菜单则需要在<code>dl</code>中引用<code>.navigation-child</code>样式</div>
+			<div class="code-example">
+				<ul class="navigation navigation-menu">
+					<li>
+						<a href="">最新活动</a>
+					</li>
+					<li>
+						<a href="">产品</a>
+					</li>
+					<li class="current">
+						<a href="">大数据</a>
+						<dl class="navigation-child">
+							<!-- 二级菜单 -->
+							<dd>
+								<a href="javascript:;">子菜单1</a>
+							</dd>
+							<dd>
+								<a href="">子菜单2</a>
+							</dd>
+							<dd>
+								<a href="">子菜单3</a>
+							</dd>
+						</dl>
+					</li>
+					<li>
+						<a href="javascript:void(0);">解决方案</a>
+						<dl class="navigation-child">
+							<!-- 二级菜单 -->
+							<dd>
+								<a href="">移动模块</a>
+							</dd>
+							<dd>
+								<a href="">后台模版</a>
+							</dd>
+							<dd>
+								<a href="">电商平台</a>
+							</dd>
+						</dl>
+					</li>
+					<li>
+						<a href="">社区</a>
+					</li>
+				</ul>
+			</div>
+			<h2>1.1 代码</h2>
+			<pre class="lemonui-code" linenums="true">
+<ul class="navigation navigation-menu">
+  <li>
+    <a href="">最新活动</a>
+  </li>
+  <li>
+    <a href="">产品</a>
+  </li>
+  <li class="current">
+    <a href="">大数据</a>
+    <dl class="navigation-child">
+      <!-- 二级菜单 -->
+      <dd>
+        <a href="javascript:;">子菜单1</a>
+      </dd>
+      <dd>
+        <a href="">子菜单2</a>
+      </dd>
+      <dd>
+        <a href="">子菜单3</a>
+      </dd>
+    </dl>
+  </li>
+  <li>
+    <a href="javascript:void(0);">解决方案</a>
+    <dl class="navigation-child">
+      <!-- 二级菜单 -->
+      <dd>
+        <a href="">移动模块</a>
+      </dd>
+      <dd>
+        <a href="">后台模版</a>
+      </dd>
+      <dd>
+        <a href="">电商平台</a>
+      </dd>
+    </dl>
+  </li>
+  <li>
+    <a href="">社区</a>
+  </li>
+</ul>
+</pre>
+			<h2>2. 垂直/侧边导航</h2>
+			<div>垂直/侧边导航菜单适用于网站左侧树形菜单导航，目前只支持到二级菜单，需要引用<code>.navigation .navigation-tree</code>两个样式，<code>.navigation-tree</code> 代表是垂直/侧边导航菜单，如果需要设置当前选中并展开子菜单的样式，则需要在
+				<code>li元素</code>中引用<code>.expand</code>样式，二级菜单则需要在<code>dl</code>中引用<code>.navigation-child</code>样式</div>
+			<div class="code-example">
+				<ul class="navigation navigation-tree">
+					<li class="expand">
+						<a href="javascript:;">默认展开</a>
+						<dl class="navigation-child">
+							<dd>
+								<a href="javascript:;">选项1</a>
+							</dd>
+							<dd>
+								<a href="javascript:;">选项2</a>
+							</dd>
+							<dd>
+								<a href="">跳转</a>
+							</dd>
+						</dl>
+					</li>
+					<li>
+						<a href="javascript:void(0);">解决方案</a>
+						<dl class="navigation-child">
+							<dd>
+								<a href="">移动模块</a>
+							</dd>
+							<dd>
+								<a href="">后台模版</a>
+							</dd>
+							<dd>
+								<a href="">电商平台</a>
+							</dd>
+						</dl>
+					</li>
+					<li>
+						<a href="">产品</a>
+					</li>
+					<li>
+						<a href="">大数据</a>
+					</li>
+				</ul>
+			</div>
+			<h2>2.1 代码</h2>
+			<pre class="lemonui-code" linenums="true">
+<ul class="navigation navigation-tree">
+  <li class="expand">
+    <a href="javascript:;">默认展开</a>
+    <dl class="navigation-child">
+      <dd>
+        <a href="javascript:;">选项1</a></dd>
+      <dd>
+        <a href="javascript:;">选项2</a></dd>
+      <dd>
+        <a href="">跳转</a></dd>
+    </dl>
+  </li>
+  <li>
+    <a href="javascript:void(0);">解决方案</a>
+    <dl class="navigation-child">
+      <dd>
+        <a href="">移动模块</a></dd>
+      <dd>
+        <a href="">后台模版</a></dd>
+      <dd>
+        <a href="">电商平台</a></dd>
+    </dl>
+  </li>
+  <li>
+    <a href="">产品</a></li>
+  <li>
+    <a href="">大数据</a></li>
+</ul>
+</pre>
+		</div>
+
+		<!-- 文档结束-->
+		</div>
+	</body>

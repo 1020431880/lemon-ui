@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+		<title>Lemon-ui示例》Web组件》页面元素类组件》标签与标号</title>
+		<link rel="stylesheet" href="../css/index.css" />
+		<!--引入lemon-ui的css -->
+		<link rel="stylesheet" href="../../dist/css/lemon-ui.css" />
+		<!--引用jquery -->
+		<script type="text/javascript" src="../../lib/jquery/jquery.min.js"></script>
+		<!--引入lemon-ui的js -->
+		<script type="text/javascript" src="../../dist/js/lemon-ui.js"></script>
+		<!--引入谷歌的prettify代码高亮插件 -->
+		<script type="text/javascript" src="../../lib/prettify/prettify.js"></script>
+		<!--[if lt IE 9]>
+        <script type="text/javascript" src="../../lib/html5.js"></script>
+		<script type="text/javascript" src="../../lib/respond.min.js"></script>
+		<script type="text/javascript" src="../../lib/PIE_IE678.js"></script>
+        <![endif]-->
+	</head>
+
+	<body>
+		<!--顶部内容-->
+		<div class="content-navbar">
+			<span class="breadcrumb">
+				<a href="javascript:void(0);" class="first"><i class="le le-shouye font-13" style="color:#333;"></i>首页</a>
+				<a href="javascript:void(0);" class="second">Web组件</a>
+				<a href="javascript:void(0);" class="third">页面元素类组件</a>
+				<a class="fourth current">标签与标号</a>
+			</span>
+		</div>
+		<!--页面主要内容-->
+		<div class="main-content-demo">
+
+			<h1>标签与标号</h1>
+			<hr>
+
+			<h2>1. 标签</h2>
+			<div>标签，有默认的主题样式，椭圆样式，圆角样式</div>
+			<div class="code-example">
+				默认：
+				<label class="label label-default">Default</label>
+				<label class="label label-primary">Primary</label>
+				<label class="label label-info">Info</label>
+				<label class="label label-success">Success</label>
+				<label class="label label-warning">Warning</label>
+				<label class="label label-danger">Danger</label>
+				</p>
+				椭圆：
+				<label class="label label-default radius-round">Default</label>
+				<label class="label label-primary radius-round">Primary</label>
+				<label class="label label-info radius-round">Info</label>
+				<label class="label label-success radius-round">Success</label>
+				<label class="label label-warning radius-round">Warning</label>
+				<label class="label label-danger radius-round">Danger</label>
+				</p>
+				圆角：
+				<label class="label label-default radius-round">1</label>
+				<label class="label label-primary radius-round">2</label>
+				<label class="label label-info radius-round">3</label>
+				<label class="label label-success radius-round">4</label>
+				<label class="label label-warning radius-round">5</label>
+				<label class="label label-danger radius-round">6</label>
+				</p>
+				大小：
+				<label class="label label-default size-mini">mini</label>
+				<label class="label label-primary size-small">small</label>
+				<label class="label label-success">normal</label>
+				<label class="label label-warning size-big">big</label>
+				<label class="label label-danger size-large">large</label>
+				</p>
+			</div>
+			<h2>1.1 代码</h2>
+			<pre class="lemonui-code" linenums="true">
+默认：
+<label class="label label-default">Default</label>
+<label class="label label-primary">Primary</label>
+<label class="label label-info">Info</label>
+<label class="label label-success">Success</label>
+<label class="label label-warning">Warning</label>
+<label class="label label-danger">Danger</label>
+
+椭圆：
+<label class="label label-default radius-round">Default</label>
+<label class="label label-primary radius-round">Primary</label>
+<label class="label label-info radius-round">Info</label>
+<label class="label label-success radius-round">Success</label>
+<label class="label label-warning radius-round">Warning</label>
+<label class="label label-danger radius-round">Danger</label>
+
+圆角：
+<label class="label label-default radius-round">1</label>
+<label class="label label-primary radius-round">2</label>
+<label class="label label-info radius-round">3</label>
+<label class="label label-success radius-round">4</label>
+<label class="label label-warning radius-round">5</label>
+<label class="label label-danger radius-round">6</label>
+
+大小：
+<label class="label label-default size-mini">mini</label>
+<label class="label label-primary size-small">small</label>
+<label class="label label-success">normal</label>
+<label class="label label-warning size-big">big</label>
+<label class="label label-danger size-large">large</label>
+</pre>
+			<h2>2. 徽章</h2>
+			<div>给链接、导航等元素嵌套label的 <code>.badge</code>类，可以很醒目的展示新的或未读的信息条目。徽章也有主题样式，在下面示例中可以看到。</div>
+			<div class="code-example">
+				<a href="javsscript:;">Message<label class="badge badge-default">1</label></a>&nbsp;&nbsp;
+				<a href="javsscript:;">Message<label class="badge badge-primary">2</label></a>&nbsp;&nbsp;
+				<a href="javsscript:;">Message<label class="badge badge-info">3</label></a>&nbsp;&nbsp;
+				<a href="javsscript:;">Message<label class="badge badge-success">4</label></a>&nbsp;&nbsp;
+				<a href="javsscript:;">Message<label class="badge badge-warning">5</label></a>&nbsp;&nbsp;
+				<a href="javsscript:;">Message<label class="badge badge-danger">6</label></a>&nbsp;&nbsp;
+				<button class="btn btn-primary">Message<label class="badge badge-white">7</label></button>
+			</div>
+			<h2>2.1 代码</h2>
+			<pre class="lemonui-code" linenums="true">
+<a href="javsscript:;">Message<label class="badge badge-default">1</label></a>
+<a href="javsscript:;">Message<label class="badge badge-primary">2</label></a>
+<a href="javsscript:;">Message<label class="badge badge-info">3</label></a>
+<a href="javsscript:;">Message<label class="badge badge-success">4</label></a>
+<a href="javsscript:;">Message<label class="badge badge-warning">5</label></a>
+<a href="javsscript:;">Message<label class="badge badge-danger">6</label></a>
+<button class="btn btn-primary">Message<label class="badge badge-white">7</label></button>
+</pre>
+			<!-- 文档结束-->
+		</div>
+	</body>

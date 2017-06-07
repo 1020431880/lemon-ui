@@ -1,0 +1,368 @@
+/*
+ * 主界面样式
+ */
+
+.lemonui-body {
+	width: 100%;
+	height: 100%;
+	min-height: 100%;
+	color: #333;
+}
+
+
+/*
+ * 顶部工具栏样式
+ */
+
+.lemonui-header {
+	width: 100%;
+	height: 50px;
+	line-height: 50px;
+	background-color: #3c8dbc;
+}
+
+
+/*
+ * logo样式
+ */
+
+.lemonui-header .header-logo {
+	float: left;
+	font-size: 20px;
+	text-align: center;
+	width: 223px;
+	font-weight: 300;
+	background-color: #3c8dbc;
+	color: #fff;
+	height: 50px;
+	max-height: 50px;
+	line-height: 50px;
+}
+
+
+/*
+ * 顶部navbar样式
+ */
+
+.lemonui-header .header-navbar {
+	height: 50px;
+	line-height: 50px;
+	background: #3c8dbc;
+}
+
+.header-navbar .navbar-menu {
+	right: 0px;
+	float: right;
+}
+
+.header-navbar .navbar-menu ul {
+	list-style: none;
+	margin: 0px;
+	padding: 0px;
+	width: 100%;
+	margin-right: 50px;
+}
+
+.header-navbar .navbar-menu ul li {
+	float: left;
+	height: 50px;
+	line-height: 50px;
+}
+
+.header-navbar .navbar-menu ul li a {
+	text-decoration: none;
+	display: block;
+	font-size: 15px;
+	color: #f2f2f2;
+	padding: 0px 20px 0px 20px;
+	line-height: 50px;
+	-webkit-transition: all .3s ease-in-out;
+	-o-transition: all .3s ease-in-out;
+	-moz-transition: all .3s ease-in-out;
+	transition: all .3s ease-in-out;
+}
+
+.header-navbar .navbar-menu ul li a:hover {
+	background: #367fa9;
+	color: #fff;
+}
+
+.navbar-menu-hover {
+	background: #367fa9;
+	color: #fff;
+}
+
+
+/*
+ * 控制navbar显示隐藏样式
+ */
+
+.lemonui-header .menu-slider {
+	position: fixed;
+	right: 0px;
+	top: 0px;
+	height: 50px;
+	line-height: 50px;
+	padding: 0px 15px 0px 15px;
+	cursor: pointer;
+	-webkit-transition: all .3s ease-in-out;
+	-o-transition: all .3s ease-in-out;
+	-moz-transition: all .3s ease-in-out;
+	transition: all .3s ease-in-out;
+}
+
+.lemonui-header .menu-slider:hover {
+	background: #367fa9;
+}
+
+
+/*
+ * 主页面样式
+ */
+
+.lemonui-main {
+	position: relative;
+	height: 100%;
+}
+
+.lemonui-main .main-menu {
+	float: left;
+	width: 209px;
+	height: 100%;
+	color: #b8c7ce;
+	background: #fafafa;
+	border-right: 1px solid #f0f0f0;
+	overflow: auto;
+}
+
+.lemonui-main .main-content {
+	height: 100%;
+	margin-left: 210px;
+}
+
+
+/*
+ * 小于768像素隐藏一些内容
+ */
+
+@media screen and (max-width:768px) {
+	.lemonui-header .header-logo {
+		width: 100%;
+		text-align: center;
+	}
+	.header-navbar .navbar-menu {
+		position: fixed;
+		background: #3c8dbc;
+		top: 50px;
+		z-index: 100;
+		width: 100%;
+		text-align: center;
+		display: none;
+	}
+	.header-navbar .navbar-menu ul li {
+		width: 100%;
+		margin-left: 0px;
+	}
+	.lemonui-main .main-menu {
+		display: none;
+	}
+	.lemonui-main .main-content {
+		margin-left: 0px;
+	}
+	.lemonui-header .menu-slider {
+		display: block;
+	}
+}
+
+
+/*
+ * 大于768像素显示一些内容
+ */
+
+@media screen and (min-width:768px) {
+	.lemonui-header .menu-slider {
+		display: none;
+	}
+	.header-navbar .navbar-menu {
+		display: block;
+	}
+}
+
+
+/*
+ * 默认隐藏菜单
+ */
+
+.lemonui-main .main-menu {
+	display: none;
+}
+
+.lemonui-main .main-content {
+	margin-left: 0px;
+}
+
+
+/*
+ *  menu菜单样式
+ */
+
+.main-menu .menu-css-module .module-name,
+.main-menu .menu-web-module .module-name,
+.main-menu .menu-js-module .module-name {
+	color: #555;
+	font-weight: 700;
+	font-size: 100%;
+	padding: 0 1em;
+	margin-top: 1em;
+	margin-left: 1em;
+	margin-bottom: 0em;
+	border-left: 3px solid #3c8dbc;
+	cursor: pointer;
+}
+
+.main-menu .menu-css-module ul,
+.main-menu .menu-web-module ul,
+.main-menu .menu-js-module ul {
+	margin: 0px;
+	padding: 0px;
+	list-style: none;
+}
+
+.main-menu .menu-css-module ul li,
+.main-menu .menu-web-module ul li,
+.main-menu .menu-js-module ul li {
+	position: relative;
+	display: block;
+	cursor: pointer;
+	padding: 3px 0px 3px 0px;
+	-webkit-transition: all .15s ease-in-out;
+	-o-transition: all .15s ease-in-out;
+	-moz-transition: all .15s ease-in-out;
+	transition: all .15s ease-in-out;
+}
+
+.main-menu .menu-css-module ul li:hover,
+.main-menu .menu-web-module ul li:hover,
+.main-menu .menu-js-module ul li:hover,
+.main-menu .menu-css-module ul li a:hover,
+.main-menu .menu-web-module ul li a:hover,
+.main-menu .menu-js-module ul li a:hover {
+	color: #095f8a;
+	text-decoration: none;
+	background-color: #eee;
+}
+
+.main-menu .menu-css-module ul li a,
+.main-menu .menu-web-module ul li a,
+.main-menu .menu-js-module ul li a {
+	color: #777;
+	display: block;
+	margin-left: 2.6em;
+	text-decoration: none;
+}
+
+.main-menu .menu-css-module ul li a span,
+.main-menu .menu-web-module ul li a span,
+.main-menu .menu-js-module ul li a span {
+	color: #aaa;
+	font-size: 10px;
+	margin-left: 5px;
+}
+
+.menu-module-hover {
+	color: #095f8a;
+	text-decoration: none;
+	background-color: #eee;
+}
+
+
+/**
+ *定义docs文档页面的css样式 
+ */
+
+.content-navbar {
+	position: relative;
+	border-bottom: 1px solid #DDDDDD;
+	line-height: 39px;
+	height: 39px;
+	overflow: hidden;
+	padding-left: 10px;
+}
+
+.main-content-demo {
+	padding: 10px;
+}
+
+
+/*示例样式*/
+
+.code-example {
+	position: relative;
+	margin: 15px 0;
+	padding: 39px 19px 14px;
+	background-color: #fff;
+	border: 1px solid #ddd;
+	border-radius: 4px;
+}
+
+.code-example:after {
+	content: "Example";
+	position: absolute;
+	top: -1px;
+	left: -1px;
+	padding: 5px 10px;
+	font-size: 12px;
+	font-weight: bold;
+	background-color: #f5f5f5;
+	border: 1px solid #ddd;
+	color: #9da0a4;
+	border-radius: 4px;
+}
+
+
+/*lemonui常用颜色值样式*/
+
+.color {
+	float: left;
+	width: 200px;
+	height: 90px;
+	line-height: 90px;
+	text-align: center;
+	color: #fff;
+	margin-left: 5px;
+	margin-right: 5px;
+}
+
+
+/*lemonui网格布局样式*/
+
+.row-demo [class^="col-"],
+.row-demo [class*=" col-"] {
+	border: solid 1px #ddd;
+	padding-top: 5px;
+	padding-right: 5px;
+	text-align: center;
+	background-color: #f7f7f9;
+}
+
+
+/*iconfont字体列表*/
+
+.iconfont-demo .icon_lists {}
+
+.iconfont-demo .icon_lists>li {
+	display: inline-block;
+	width: 130px;
+	height: 180px;
+	text-align: center;
+	vertical-align: top;
+	list-style: none !important;
+}
+
+.iconfont-demo .icon_lists>li>i {
+	font-size: 30px;
+	color: #333;
+	line-height: 100px -webkit-transition: font-size 0.25s ease-out 0s;
+	-moz-transition: font-size 0.25s ease-out 0s;
+	transition: font-size 0.25s ease-out 0s;
+}

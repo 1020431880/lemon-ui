@@ -1,0 +1,210 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html>
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <title></title>
+
+    <script type="text/javascript" src="js/jquery-1.8.3.js"></script>
+    <!-- lemon弹框插件 -->
+    <link rel="stylesheet" type="text/css" href="css/lemon.css">
+        <link rel="stylesheet" type="text/css" href="../../dist/fonts/animate.css">	
+    <script type="text/javascript" src="js/lemon.js"></script>
+
+    <style type="text/css">
+        .btn {
+            background: #0099CC;
+            border: 0;
+            font-size: 13px;
+            line-height: 30px;
+            margin-top: 5px;
+            padding: 0px 8px;
+            padding-top: 2px\9;
+            /*IE8*/
+            color: #fff;
+            top: -1px;
+            cursor: pointer;
+            vertical-align: middle;
+            border-radius: 2px;
+            *border-radius: 2px;
+            padding: 0px 8px;
+        }
+        
+        .btn:hover {
+            background: #DA434E;
+            border: 0;
+            color: #FFF;
+            font-size: 13px;
+            line-height: 30px;
+            margin-top: 5px;
+            padding: 0px 8px;
+            padding-top: 2px\9;
+            /*IE8*/
+            top: -1px;
+            cursor: pointer;
+            vertical-align: middle;
+            border-radius: 2px;
+            *border-radius: 2px;
+            padding: 0px 8px;
+        }
+        
+        .table {
+            border-spacing: 1;
+            border-collapse: collapse;
+            margin: 0px;
+            padding: 0px;
+            topmargin: 0px;
+            font-size: 10pt;
+            border: 0;
+            margin: 0;
+            padding: 0;
+            border-color: #31A66B;
+        }
+        
+        .table tr {
+            height: 25px;
+        }
+        
+        .demo_div {
+            border: solid 1px #31A66B;
+            border-radius: 3px;
+            font-size: 13px;
+            padding: 5px 5px;
+        }
+    </style>
+    <script type="text/javascript">
+        $(function() {
+            // lemon的alert弹框
+            $("#lemon-alert-btn").click(function() {
+                $.lemon.alert({
+                    title: "提示",
+                    content: "淡的淡淡的的大大",
+                    skin: "lemon-alert-default",
+                    animate: [true, 0],
+                    button: ["点击这里啪啪啪", "", ""],
+                    icon: ["0"],
+                    onClick: function() {
+                        $.lemon.alert({
+                        	content:"dfdf"
+                        });
+                    }
+                });
+            });
+            // lemon的confirm
+            $("#lemon-confirm-btn").click(function() {
+                $.lemon.confirm({
+                    content: "欧巴Style",
+                    shade: [false],
+                    animate: [true, 1],
+                    skin: "lemon-confirm-yahong",
+                    btn: ["yes,i can", "no,i see", "center"],
+                    icon: ["4", ""],
+                    onClick: function() {
+                        $.lemon.confirm();
+                    }
+                });
+            });
+
+            // lemon的iframe
+            $("#lemon-iframe-btn1").click(function() {
+                $.lemon.iframe({
+                    title: "这个是标题页哦哦哦哦哦哦哦度啊",
+                    shade: [false],
+                    animate: [true, 4],
+					iframeid:"iframe1",
+                    url: "http://www.qq.com",
+                    onClose: function() {}
+                });
+            });
+			$("#lemon-iframe-btn2").click(function() {
+                $.lemon.iframe({
+                    title: "这个是标题页哦哦哦哦哦哦哦度啊",
+                    shade: [false],
+                    animate: [true, 4],
+					iframeid:"iframe2",
+                    url: "iframe-test-html/closeIframe2.html",
+                    onClose: function() {}
+                });
+            });
+			$("#lemon-iframe-btn3").click(function() {
+                $.lemon.iframe({
+                    title: "这个是标题页哦哦哦哦哦哦哦度啊",
+                    shade: [false],
+                    animate: [true, 4],
+					iframeid:"iframe3",
+                    url: "iframe-test-html/closeIframe3.html",
+                    onClose: function() {}
+                });
+            });
+            // lemon的layer
+            $("#lemon-layer-btn").click(function() {
+                $.lemon.layer({
+                    shade: [false],
+                    animate: [true, 7],
+                    content: "<img src='1.png' height=200 width=200/>",
+                    style: "",
+                    closeBtn: false,
+                    time: 2000,
+                    align: "right-bottom",
+                    height: 200,
+                    width: 200
+                });
+            });
+            // 加载load
+            $("#lemon-load-btn").click(function() {
+                $.lemon.load({
+                    icon: [3],
+                    time: 2000,
+                    onClose: function() {
+                        alert("2000ms后调用的回调函数")
+                    }
+                });
+            });
+            // 加载msg提示
+            $("#lemon-msg-btn").click(function() {
+                $.lemon.msg({
+                    icon: [],
+                    skin: "lemon-msg-yahei",
+                    width: 120,
+                    content: "重新登陆",
+					time:2000
+                });
+            });
+			
+			// tips提示
+			$.lemon.tips({
+			   bgColor:"#37bc98"
+			});
+        });
+		
+    </script>
+</head>
+
+<body>
+   <div id="debug"></div>
+    <h4>lemon的alert使用</h4>
+    <input type="button" value="lemon-alert" id="lemon-alert-btn" class="btn" />
+    <h4>lemon的confirm使用</h4>
+    <input type="button" value="lemon-confirm" id="lemon-confirm-btn" class="btn" />
+    <h4>lemon的iframe使用</h4>
+    <input type="button" value="lemon-iframe1" id="lemon-iframe-btn1" class="btn" />
+	<input type="button" value="lemon-iframe2" id="lemon-iframe-btn2" class="btn" />
+	<input type="button" value="lemon-iframe3" id="lemon-iframe-btn3" class="btn" />
+    <h4>lemon的layer使用</h4>
+    <input type="button" value="lemon-layer" id="lemon-layer-btn" class="btn" />
+    <h4>lemon的msg使用</h4>
+    <input type="button" value="lemon-msg" id="lemon-msg-btn" class="btn" />
+    <h4>lemon的load使用</h4>
+    <input type="button" value="lemon-load" class="btn lemon-tips" lemon-tips-title="lemon-tips右边" lemon-tips-align="left" id="lemon-load-btn" />
+   	<h4>lemon的tips使用</h4>
+      <div align="left" style="margin-left:100px;height:100px;">
+          <a href="javascript:void(0);" class="lemon-tips" lemon-tips-title="lemon-tips顶部" lemon-tips-align="top">lemon-tips顶部</a>
+          <a href="javascript:void(0);" class="lemon-tips" lemon-tips-title="lemon-tips底部" lemon-tips-align="bottom">lemon-tips底部</a>
+          <a href="javascript:void(0);" class="lemon-tips" lemon-tips-title="lemon-tips左边" lemon-tips-align="left">lemon-tips左边</a>
+          <a href="javascript:void(0);" class="lemon-tips" lemon-tips-title="lemon-tips右边" lemon-tips-align="right">lemon-tips右边</a>
+      </div> 
+
+
+	</body>
+
+</html>

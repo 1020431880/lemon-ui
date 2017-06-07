@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+		<title>Lemon-ui示例》Web组件》》导航类组件》图片轮播</title>
+		<link rel="stylesheet" href="../css/index.css" />
+		<!--引入lemon-ui的css -->
+		<link rel="stylesheet" href="../../dist/css/lemon-ui.css" />
+		<!--引用jquery -->
+		<script type="text/javascript" src="../../lib/jquery/jquery.min.js"></script>
+	</head>
+
+	<body>
+		<!--顶部内容-->
+		<div class="content-navbar">
+			<span class="breadcrumb">
+				<a href="javascript:void(0);" class="first"><i class="le le-shouye font-13" style="color:#333;"></i>首页</a>
+				<a href="javascript:void(0);" class="second">Js插件</a>
+				<a href="javascript:void(0);" class="third">Js插件</a>
+				<a class="fourth breadcrumb-active">模态窗口</a>
+			</span>
+		</div>
+		<!--页面主要内容-->
+		<div class="main-content-demo">
+
+			<div class="code-example">
+				<input type="button" class="btn btn-primary" id="open-modal" value="Open Modal" />
+
+				<div id="myModal" class="modal" tabindex="-1">
+					<div class="modal-dialog">
+						<div class="modal-header">
+							<h4 class="modal-title">用户注册</h4>
+							<a href="javascript:;" data-modal-close class="modal-close"></a>
+						</div>
+						<div class="modal-body">
+							名称：<input type="text" class="input-text" /></p>
+							密码：<input type="password" visiblity="true" class="input-text" />
+						</div>
+						<div class="modal-footer">
+							<input type="button" value="同意" data-modal-close class="btn btn-primary" />
+							<input type="button" value="关闭" data-modal-close class="btn btn-default" />
+						</div>
+					</div>
+				</div>
+
+			</div>
+			<!-- 文档结束-->
+		</div>
+	</body>

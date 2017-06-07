@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+		<title>Lemon-ui示例》Web组件》布局类组件》面板</title>
+		<link rel="stylesheet" href="../css/index.css" />
+		<!--引入lemon-ui的css -->
+		<link rel="stylesheet" href="../../dist/css/lemon-ui.css" />
+		<!--引用jquery -->
+		<script type="text/javascript" src="../../lib/jquery/jquery.min.js"></script>
+		<!--引入lemon-ui的js -->
+		<script type="text/javascript" src="../../dist/js/lemon-ui.js"></script>
+		<!--引入谷歌的prettify代码高亮插件 -->
+		<script type="text/javascript" src="../../lib/prettify/prettify.js"></script>
+		<!--[if lt IE 9]>
+        <script type="text/javascript" src="../../lib/html5.js"></script>
+		<script type="text/javascript" src="../../lib/respond.min.js"></script>
+		<script type="text/javascript" src="../../lib/PIE_IE678.js"></script>
+        <![endif]-->
+	</head>
+
+	<body>
+		<!--顶部内容-->
+		<div class="content-navbar">
+			<span class="breadcrumb">
+				<a href="javascript:void(0);" class="first"><i class="le le-shouye font-13" style="color:#333;"></i>首页</a>
+				<a href="javascript:void(0);" class="second">Web组件</a>
+				<a href="javascript:void(0);" class="third">布局类组件</a>
+				<a class="fourth current">面板</a>
+			</span>
+		</div>
+		<!--页面主要内容-->
+		<div class="main-content-demo">
+			<!-- 文档开始-->
+			<h1>面板</h1>
+			<hr>
+			<div>面板可以将div元素分模块来显示，并添加标题和背景，需要引用<code>.panel</code>类，就可以使用这个组件了</div>
+			<h2>1.1 默认面板</h2>
+			<div>下面是面板主题样式，引用<code>.panel</code>加主题样式的css类</div>
+			面板内容：
+			<div class="panel panel-default">
+				<div class="panel-body">面板显示内容</div>
+			</div>
+			带标题面板：
+			<div class="panel panel-default">
+				<div class="panel-header">面板标题</div>
+				<div class="panel-body">面板显示内容</div>
+			</div>
+			带脚注面板：
+			<div class="panel panel-default">
+				<div class="panel-body">面板显示内容</div>
+				<div class="panel-footer">面板脚注</div>
+			</div>
+
+			面板主题：
+			<div class="panel panel-primary">
+				<div class="panel-header">面板标题</div>
+				<div class="panel-body">面板显示内容</div>
+			</div>
+			<div class="panel panel-secondary">
+				<div class="panel-header">面板标题</div>
+				<div class="panel-body">面板显示内容</div>
+			</div>
+			<div class="panel panel-success">
+				<div class="panel-header">面板标题</div>
+				<div class="panel-body">面板显示内容</div>
+			</div>
+			<div class="panel panel-warning">
+				<div class="panel-header">面板标题</div>
+				<div class="panel-body">面板显示内容</div>
+			</div>
+			<div class="panel panel-danger">
+				<div class="panel-header">面板标题</div>
+				<div class="panel-body">面板显示内容</div>
+			</div>
+			<h2>1.2 代码</h2> 主题样式有
+			<code>.panel-default</code>，<code>.panel-primary</code>，<code>.panel-secondary</code>，
+			<code>.panel-success</code>，<code>.panel-warning</code>，<code>.panel-danger</code>个场景样式
+			<pre class="lemonui-code" linenums="true">
+<div class="panel panel-default">
+  <div class="panel-header">面板标题</div>
+  <div class="panel-body">面板显示内容</div>
+</div>
+</pre>
+
+			<!-- 文档结束-->
+		</div>
+	</body>

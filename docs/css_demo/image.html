@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+		<title>Lemon-ui示例》CSS》HTML元素》图片</title>
+		<link rel="stylesheet" href="../css/index.css" />
+		<!--引入lemon-ui的css -->
+		<link rel="stylesheet" href="../../dist/css/lemon-ui.css" />
+		<!--引用jquery -->
+		<script type="text/javascript" src="../../lib/jquery/jquery.min.js"></script>
+		<!--引入lemon-ui的js -->
+		<script type="text/javascript" src="../../dist/js/lemon-ui.js"></script>
+		<!--引入谷歌的prettify代码高亮插件 -->
+		<script type="text/javascript" src="../../lib/prettify/prettify.js"></script>
+		<!--[if lt IE 9]>
+        <script type="text/javascript" src="../../lib/html5.js"></script>
+		<script type="text/javascript" src="../../lib/respond.min.js"></script>
+		<script type="text/javascript" src="../../lib/PIE_IE678.js"></script>
+        <![endif]-->
+	</head>
+
+	<body>
+		<!--顶部内容-->
+		<div class="content-navbar">
+			<span class="breadcrumb">
+				<a href="javascript:void(0);" class="first"><i class="le le-shouye font-13" style="color:#333;"></i>首页</a>
+				<a href="javascript:void(0);" class="second">CSS</a>
+				<a href="javascript:void(0);" class="third">HTML元素</a>
+				<a class="fourth current">图片</a>
+			</span>
+		</div>
+		<!--页面主要内容-->
+		<div class="main-content-demo">
+
+			<h1>1.图片</h1>
+			<hr>
+			<div>通过为 &lt;img&gt; 元素添加以下相应的类，可以让图片呈现不同的形状。</div>
+			<div class="code-example">
+				<img src="../images/image_none.svg" title="图片圆角" class="radius">
+				<img src="../images/image_none.svg" title="圆形图片" class="radius-round">
+				<img src="../images/image_none.svg" title="缩略图" class="image-thumbnail">
+			</div>
+
+			<h2>1.1HTML代码</h2>
+			<pre class="lemonui-code" linenums="true">
+<img src="..." title=".." class="radius">
+<img src="..." title=".." class="radius-round">
+<img src="..." title=".." class="image-thumbnail">
+</pre>
+
+			<h2>2.头像</h1>
+			<hr>
+			<div class="code-example">
+				<img src="../images/image_head.jpg" title=".." class="radius-round" style="width:20px;height:20px;">
+				<img src="../images/image_head.jpg" title=".." class="radius-round" style="width:30px;height:30px;">
+				<img src="../images/image_head.jpg" title=".." class="radius-round" style="width:50px;height:50px;">
+				<img src="../images/image_head.jpg" title=".." class="radius-round" style="width:70px;height:70px;">
+			</div>
+
+			<h2>2.1HTML代码</h2>
+			<pre class="lemonui-code" linenums="true">
+<img src=".." title=".." class="radius-round" style="width:20px;height:20px;">
+<img src=".." title=".." class="radius-round" style="width:30px;height:30px;">
+<img src=".." title=".." class="radius-round" style="width:50px;height:50px;">
+<img src=".." title=".." class="radius-round" style="width:70px;height:70px;">
+</pre>
+		</div>
+	</body>

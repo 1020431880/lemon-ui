@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+		<title>Lemon-ui示例》Js插件》弹出提示框</title>
+		<link rel="stylesheet" href="../css/index.css" />
+		<!--引入lemon-ui的css -->
+		<link rel="stylesheet" href="../../dist/css/lemon-ui.css" />
+		<!--引用jquery -->
+		<script type="text/javascript" src="../../lib/jquery/jquery.min.js"></script>
+		<script type="text/javascript" src="../js/index.js"></script>
+		<!--引入lemon-ui的js -->
+		<script type="text/javascript" src="../../dist/js/lemon-ui.js"></script>
+		<!--引入谷歌的prettify代码高亮插件 -->
+		<script type="text/javascript" src="../../lib/prettify/prettify.js"></script>
+		<!--[if lt IE 9]>
+        <script type="text/javascript" src="../../lib/html5.js"></script>
+		<script type="text/javascript" src="../../lib/respond.min.js"></script>
+		<script type="text/javascript" src="../../lib/PIE_IE678.js"></script>
+        <![endif]-->
+	</head>
+
+	<body>
+		<!--顶部内容-->
+		<div class="content-navbar">
+			<span class="breadcrumb">
+				<a href="javascript:void(0);" class="first"><i class="le le-shouye font-13" style="color:#333;"></i>首页</a>
+				<a href="javascript:void(0);" class="second">Js插件</a>
+				<a href="javascript:void(0);" class="third">Js插件</a>
+				<a class="fourth current">对话消息框</a>
+			</span>
+		</div>
+		<!--页面主要内容-->
+		<div class="main-content-demo">
+
+			<h1>消息对话框</h1>
+			<hr>
+
+			<h2>1. 演示效果</h2>
+			<div>网页弹出对话消息框插件，可以代替原生的默认对话消息框</div>
+			<div class="code-example">
+				alert警告框：<br />
+				<input type="button" class="btn btn-primary" value="alert" id="btn-dialogbox-alert" /></p>
+				confirm确认框：<br />
+				<input type="button" class="btn btn-primary" value="confirm" id="btn-dialogbox-confirm" /></p>
+				prompt提示框：<br />
+				<input type="button" class="btn btn-primary" value="prompt" id="btn-dialogbox-prompt" /></p>
+				msg消息提示：<br />
+				<input type="button" class="btn btn-primary" value="msg" id="btn-dialogbox-msg" /></p>
+				iframe弹出窗口：<br />
+				<input type="button" class="btn btn-primary" value="iframe第一个窗口" id="btn-dialogbox-iframe" /></p>
+				<input type="button" class="btn btn-primary" value="iframe第二个窗口" id="btn-dialogbox-iframe1" /></p>
+
+			</div>
+
+			<h2>2. 主题样式</h2>
+			<div>主题效果只包含alert，confirm，prompt，msg，需要引用对应的样式，注：<code>iframe弹出窗口</code>只有默认的样式</div>
+			<div class="code-example" align="center">
+				<input type="button" class="btn btn-default" value="dialogbox-default" id="btn-dialogbox-default" />
+				<input type="button" class="btn btn-primary" value="dialogbox-primary" id="btn-dialogbox-primary" />
+				<input type="button" class="btn btn-info" value="dialogbox-info" id="btn-dialogbox-info" />
+				<input type="button" class="btn btn-success" value="dialogbox-success" id="btn-dialogbox-success" />
+				<input type="button" class="btn btn-warning" value="dialogbox-warning" id="btn-dialogbox-warning" />
+				<input type="button" class="btn btn-danger" value="dialogbox-danger" id="btn-dialogbox-danger" />
+			</div>
+
+			<h2>3.1 代码</h2>
+			<pre class="lemonui-code" linenums="true">
+// 插件参数
+Dialogbox.DEFAULTS = {
+    title: "标题", // 标题
+    icon: "", // 成功：success，失败：error，警告：warning，提示：info，帮助：help
+    content: "", // 内容
+    placeholder: "", // prompt输入框提示文字
+    btn: ["确定", "取消"], // 定义按钮的名称
+    closebtn: true, // 是否显示右上角关闭按钮，true和false
+    skin: "dialogbox-default", // 使用的皮肤样式
+    onClick: "", // 点击确定按钮的回调函数
+    onCancel: "", // 点击取消按钮的回调函数
+    backdrop: false, // 第一个参数控制遮罩层显示，第二个控制遮罩层背景透明度，第三个是给遮罩层添加动画
+    animate: [true, "animated zoomIn"], // 显示时候是否有动画效果，可以直接使用ui中定义的动画
+    timeout: 1500, // 定时关闭时间
+    zIndex: 100 // 设置z-index，解决因别的层的index比插件的高而不显示插件的问题
+
+};
+
+// 插件调用
+$("#btn-dialogbox-confirm").click(function() {
+    $.dialogbox.confirm({
+        title: "确认框",
+        icon: "info",
+        content: "这是一个confirm确认框！",
+        onClick: function() {
+            $.dialogbox.alert({
+                title: "操作提示",
+                content: "您的订单已经提交成功！",
+                icon: "success"
+            });
+        },
+        onCancel: function() {
+            $.dialogbox.alert({
+                title: "操作提示",
+                content: "您的订单已经取消！",
+                icon: "info"
+            });
+        }
+    });
+});
+</pre>
+			<!-- 文档结束-->
+		</div>
+	</body>

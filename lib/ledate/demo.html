@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<title></title>
+<script type="text/javascript" src="js/jquery-1.8.3.js"></script>
+
+<!-- ledate插件 -->
+<script type="text/javascript" src="js/ledate.dev.js"></script>
+
+<script type="text/javascript">
+	$(function() {
+	     $.ledate.skin("yahong"); // 设置皮肤
+		/***********************基本使用方法******************************/
+		$("#date_1").ledate({
+			language : "en",
+			isFestival : true,
+			fixed : true,isTime : true,
+			format : "yyyy/MM/dd HH:mm:ss",
+			startDate:"1900-04-11 10:23:53",
+			minDate : "1900-03-11 10:10:10",
+			maxDate : "2016-01-22 15:15:15"
+		});
+
+		$("#date_2").ledate({
+			isFestival : true,
+			isTime : true,
+			format : "yyyy/MM/dd HH:mm:ss",
+			startDate:"2015-03-11 11:11:10",
+			minDate : "2015-03-11 11:11:10",
+			maxDate : "2015-08-11 11:11:36"
+		});
+
+	});
+</script>
+<style type="text/css">
+.table {
+	border-spacing: 1;
+	border-collapse: collapse;
+	margin: 0px;
+	padding: 0px;
+	topmargin: 0px;
+	font-size: 10pt;
+	border: 0;
+	margin: 0;
+	padding: 0;
+	border-color: #31A66B;
+	-moz-border-color: #31A66B;
+}
+
+.table tr {
+	height: 35px;
+}
+
+.table td input {
+	border: solid 1px #999;
+}
+</style>
+
+</head>
+
+<body>
+
+	<div align=center>
+
+		<table border="1" class="table" width="1300">
+			<tr>
+				<td colspan="6" align='center'></td>
+			</tr>
+			<tr>
+				<td align='right'>默认日期：</td>
+				<td align="left"><input type="text" id="date_1"
+					style="height:20px;" />
+				</td>
+				<td align='right'>默认带时分秒：</td>
+				<td align="left"><input type="text" id="date_2"
+					style="height:20px;" />
+				</td>
+			</tr>
+		</table>
+		<div id="debug"></div>
+	</div>
+
+</body>
+</html>

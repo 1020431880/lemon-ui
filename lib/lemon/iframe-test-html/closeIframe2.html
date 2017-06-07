@@ -1,0 +1,61 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd"> 
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<title></title>
+
+    <script type="text/javascript" src="../js/jquery-1.7.2.min.js"></script>
+    <!-- lemon弹框插件 -->
+    <link rel="stylesheet" type="text/css" href="../css/lemon.css">
+    <script type="text/javascript" src="../js/lemon.js"></script>
+<script type="text/javascript">
+$(function(){
+  $("#btn2_iframe").click(function(){
+	 $.lemon.closeIframe("iframe2");
+  });
+
+});
+</script>
+<style type="text/css">
+/*按钮样式*/
+.btn {
+	background: #0099CC;
+	border: 0;
+	font-size: 13px;
+	line-height: 30px;
+	margin-top: 5px;
+	padding: 0px 8px;
+	padding-top: 2px\9; /*IE8*/
+	color: #fff;
+	top: -1px;
+	cursor: pointer;
+	vertical-align: middle;
+	border-radius: 2px;
+	*border-radius: 2px;
+	padding: 0px 8px;
+}
+
+.btn:hover {
+	background: #DA434E;
+	border: 0;
+	color:#FFF;
+	font-size: 13px;
+	line-height: 30px;
+	margin-top: 5px;
+	padding: 0px 8px;
+	padding-top: 2px\9; /*IE8*/
+	top: -1px;
+	cursor: pointer;
+	vertical-align: middle;
+	border-radius: 2px;
+	*border-radius: 2px;
+	padding: 0px 8px;
+}
+</style>
+  </head>
+  
+  <body>
+  <div align="center" style="height:60px;"><h3>这是Iframe的展示页面</h3></div>
+   <div align="center"><input type="button" id="btn2_iframe" class="btn" value="关闭父窗口的Iframe"  /></div>
+  </body>
+</html>

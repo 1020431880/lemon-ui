@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+		<title>Lemon-ui示例》JS插件》》JS插件》日期选择器</title>
+		<link rel="stylesheet" href="../css/index.css" />
+		<!--引入lemon-ui的css -->
+		<link rel="stylesheet" href="../../dist/css/lemon-ui.css" />
+		<!--引用jquery -->
+		<script type="text/javascript" src="../../lib/jquery/jquery.min.js"></script>
+		<!--引入lemon-ui的js -->
+		<script type="text/javascript" src="../../dist/js/lemon-ui.js"></script>
+		<script type="text/javascript" src="../js/index.js"></script>
+		<!--引入谷歌的prettify代码高亮插件 -->
+		<script type="text/javascript" src="../../lib/prettify/prettify.js"></script>
+		<!--[if lt IE 9]>
+        <script type="text/javascript" src="../../lib/html5.js"></script>
+		<script type="text/javascript" src="../../lib/respond.min.js"></script>
+		<script type="text/javascript" src="../../lib/PIE_IE678.js"></script>
+        <![endif]-->
+
+	</head>
+	<!--顶部内容-->
+	<div class="content-navbar">
+		<span class="breadcrumb">
+				<a href="javascript:void(0);" class="first"><i class="le le-shouye font-13" style="color:#333;"></i>首页</a>
+				<a href="javascript:void(0);" class="second">JS插件</a>
+				<a href="javascript:void(0);" class="third">JS插件</a>
+				<a class="fourth breadcrumb-active">日期选择器</a>
+			</span>
+	</div>
+	<!--页面主要内容-->
+	<div class="main-content-demo">
+
+		<h1>日期选择器</h1>
+		<hr>
+
+		<h2>1. 基本使用</h2>
+		<div>基本使用方法</div>
+		<div class="code-example">
+			<fieldset>
+				<legend>普通日期</legend>
+				普通日期：
+				<div class="input-text-group ui-datepicker" id='datepicker-default'>
+					<input type="text" class="input-text" readonly>
+					<label class="input-text-label"><i class="le le-calendar"></i></label>
+				</div>
+				带时分秒：
+				<div class="input-text-group ui-datepicker" id='datepicker-default-times'>
+					<input type="text" class="input-text" readonly>
+					<label class="input-text-label"><i class="le le-calendar"></i></label>
+				</div>
+			</fieldset>
+
+			<fieldset>
+				<legend>格式化日期</legend>
+				示例1：
+				<div class="input-text-group ui-datepicker" id='datepicker-default-format1'>
+					<input type="text" class="input-text" placeholder="yyyy-MM-dd HH:mm:ss" readonly>
+					<label class="input-text-label"><i class="le le-calendar"></i></label>
+				</div>
+				示例2：
+				<div class="input-text-group ui-datepicker" id='datepicker-default-format2'>
+					<input type="text" class="input-text" placeholder="yyyy年MM月dd日 hh时mm分ss秒" style='width:260px;' readonly>
+					<label class="input-text-label"><i class="le le-calendar"></i></label>
+				</div>
+				示例3：
+				<div class="input-text-group ui-datepicker" id='datepicker-default-format3'>
+					<input type="text" class="input-text" placeholder="yyyy/MM/dd HH:mm:ss" readonly>
+					<label class="input-text-label"><i class="le le-calendar"></i></label>
+				</div>
+				</p>
+				示例4：
+				<div class="input-text-group ui-datepicker" id='datepicker-default-format4'>
+					<input type="text" class="input-text" placeholder="MM/dd/yyyy HH:mm:ss" readonly>
+					<label class="input-text-label"><i class="le le-calendar"></i></label>
+				</div>
+				示例5：
+				<div class="input-text-group ui-datepicker" id='datepicker-default-format5'>
+					<input type="text" class="input-text" placeholder="yyyyMMddHHmmss" readonly>
+					<label class="input-text-label"><i class="le le-calendar"></i></label>
+				</div>
+			</fieldset>
+
+			<fieldset>
+				<legend>固定日期选择器</legend>
+				<div class="input-text-group ui-datepicker" id='datepicker-default-fixed'>
+					<input type="text" class="input-text" readonly>
+					<label class="input-text-label"><i class="le le-calendar"></i></label>
+				</div>
+			</fieldset>
+
+			<fieldset>
+				<legend>日期标注</legend>
+				日期标注：
+				<div class="input-text-group ui-datepicker" id='datepicker-default-marks'>
+					<input type="text" class="input-text" readonly>
+					<label class="input-text-label"><i class="le le-calendar"></i></label>
+				</div>
+			</fieldset>
+
+		</div>
+		<h2>1.1 代码</h2>
+		<pre class="lemonui-code" linenums="true">
+	Datepicker.DEFAULTS = {
+		skin: "datepicker-default",
+		viewModel: "date", // 默认显示的视图，有year,month,yearMonth,time
+		language: "zh", // 显示语言，zh：中文，en：英文
+		date: "", // 默认时间，默认是当天
+		minDate: "1900-01-01 00:00:00", // 最小日期
+		maxDate: "2099-12-31 23:59:59", // 最大日期
+		format: "yyyy-MM-dd", // 日期格式化
+		festival: false, // 是否显示节日
+		onBefore: function() {}, // 日期显示之前函数
+		onSelect: function(date) {}, // 选择日期函数
+		onAfter: function() {}, // 选择之后的函数
+		fixed: false, // 是否固定显示
+		marks: [], //给日期添加标注，格式是：2017-05-23
+		isTime: false, // 是否显示时分秒
+		zIndex: 1000 // z-index值
+
+	};
+	
+	// 中文资源
+	var zh_language = {
+		week: ["日", "一", "二", "三", "四", "五", "六"],
+		month: ["一月", "二月", "三月", "四月", "五月", "六月", "七月", "八月", "九月", "十月", "十一月", "十二月"],
+		times: ["小时", "分钟", "秒数"],
+		timesTitle: "时间选择",
+		yearTitle: "年份选择",
+		monthTitle: "月份选择",
+		yearMonthTitle: "年月选择",
+		clearBtn: "清空",
+		todayBtn: "今天",
+		yesBtn: "确定"
+	};
+</pre>
+		<h2>主题样式</h2>
+		<div></div>
+
+		<!-- 文档结束-->
+	</div>
+	</body>

@@ -1,0 +1,399 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+		<title>Lemon-ui示例》Web组件》》页面元素类组件》按钮下拉菜单</title>
+		<link rel="stylesheet" href="../css/index.css" />
+		<!--引入lemon-ui的css -->
+		<link rel="stylesheet" href="../../dist/css/lemon-ui.css" />
+		<!--引用jquery -->
+		<script type="text/javascript" src="../../lib/jquery/jquery.min.js"></script>
+		<!--引入lemon-ui的js -->
+		<script type="text/javascript" src="../../dist/js/lemon-ui.js"></script>
+		<!--引入谷歌的prettify代码高亮插件 -->
+		<script type="text/javascript" src="../../lib/prettify/prettify.js"></script>
+		<!--[if lt IE 9]>
+        <script type="text/javascript" src="../../lib/html5.js"></script>
+		<script type="text/javascript" src="../../lib/respond.min.js"></script>
+		<script type="text/javascript" src="../../lib/PIE_IE678.js"></script>
+        <![endif]-->
+	</head>
+
+	<body>
+		<!--顶部内容-->
+		<div class="content-navbar">
+			<span class="breadcrumb">
+				<a href="javascript:void(0);" class="first"><i class="le le-shouye font-13" style="color:#333;"></i>首页</a>
+				<a href="javascript:void(0);" class="second">Web组件</a>
+				<a href="javascript:void(0);" class="third">页面元素类组件</a>
+				<a class="fourth current">按钮下拉菜单</a>
+			</span>
+		</div>
+		<!--页面主要内容-->
+		<div class="main-content-demo">
+
+			<h1>按钮下拉菜单</h1>
+			<hr>
+			<h2>1. 普通按钮下拉菜单</h2>
+			<div>普通按钮下拉菜单功能需要在div中引用<code>.button-dropdown</code>，扩展的是ui中按钮的功能,在button中需要引用<code>.dropdown-toggle</code>来表示按钮具有可以点击展开下拉菜单的功能。
+				<br/>菜单中的li使用<code>.header</code>来表示是头部标题，使用<code>.sparator</code>来显示一条分割线，使用<code>.disabled</code>来禁用当前的下拉选项</div>
+			<div class="code-example">
+				<div class="button-dropdown">
+					<button class="btn btn-default dropdown-toggle">default</button>
+					<ul class="dropdown-menu">
+						<li class="header">课程表一</li>
+						<li>
+							<a href="javascript:;">语文语文语文语文</a>
+						</li>
+						<li>
+							<a href="#">数学数学数学</a>
+						</li>
+						<li class="separator"></li>
+						<li class="header">课程表二</li>
+						<li>
+							<a href="#">政治政治政治政治</a>
+						</li>
+						<li class="disabled">
+							<a href="#">历史历史历史历史历史</a>
+						</li>
+
+						<li>
+							<a href="#">计算机计算机计算机计算机</a>
+						</li>
+					</ul>
+				</div>
+
+				<div class="button-dropdown">
+					<button class="btn btn-primary dropdown-toggle">primary</button>
+					<ul class="dropdown-menu">
+						<li class="header">课程表一</li>
+						<li>
+							<a href="#">语文语文语文语文</a>
+						</li>
+						<li>
+							<a href="#">数学数学数学</a>
+						</li>
+						<li class="separator"></li>
+						<li class="header">课程表二</li>
+						<li>
+							<a href="#">政治政治政治政治</a>
+						</li>
+						<li class="disabled">
+							<a href="#">历史历史历史历史历史</a>
+						</li>
+
+						<li>
+							<a href="#">计算机计算机计算机计算机</a>
+						</li>
+					</ul>
+				</div>
+
+				<div class="button-dropdown">
+					<button class="btn btn-success dropdown-toggle">success</button>
+					<ul class="dropdown-menu">
+						<li class="header">课程表一</li>
+						<li>
+							<a href="#">语文语文语文语文</a>
+						</li>
+						<li>
+							<a href="#">数学数学数学</a>
+						</li>
+						<li class="separator"></li>
+						<li class="header">课程表二</li>
+						<li>
+							<a href="#">政治政治政治政治</a>
+						</li>
+						<li class="disabled">
+							<a href="#">历史历史历史历史历史</a>
+						</li>
+
+						<li>
+							<a href="#">计算机计算机计算机计算机</a>
+						</li>
+					</ul>
+				</div>
+
+				<div class="button-dropdown">
+					<button class="btn btn-info dropdown-toggle">info</button>
+					<ul class="dropdown-menu">
+						<li class="header">课程表一</li>
+						<li>
+							<a href="#">语文语文语文语文</a>
+						</li>
+						<li>
+							<a href="#">数学数学数学</a>
+						</li>
+						<li class="separator"></li>
+						<li class="header">课程表二</li>
+						<li>
+							<a href="#">政治政治政治政治</a>
+						</li>
+						<li class="disabled">
+							<a href="#">历史历史历史历史历史</a>
+						</li>
+
+						<li>
+							<a href="#">计算机计算机计算机计算机</a>
+						</li>
+					</ul>
+				</div>
+
+				<div class="button-dropdown">
+					<button class="btn btn-warning dropdown-toggle">warning</button>
+					<ul class="dropdown-menu">
+						<li class="header">课程表一</li>
+						<li>
+							<a href="#">语文语文语文语文</a>
+						</li>
+						<li>
+							<a href="#">数学数学数学</a>
+						</li>
+						<li class="separator"></li>
+						<li class="header">课程表二</li>
+						<li>
+							<a href="#">政治政治政治政治</a>
+						</li>
+						<li class="disabled">
+							<a href="#">历史历史历史历史历史</a>
+						</li>
+
+						<li>
+							<a href="#">计算机计算机计算机计算机</a>
+						</li>
+					</ul>
+				</div>
+
+				<div class="button-dropdown">
+					<button class="btn btn-danger dropdown-toggle">danger</button>
+					<ul class="dropdown-menu">
+						<li class="header">课程表一</li>
+						<li>
+							<a href="#">语文语文语文语文</a>
+						</li>
+						<li>
+							<a href="#">数学数学数学</a>
+						</li>
+						<li class="separator"></li>
+						<li class="header">课程表二</li>
+						<li>
+							<a href="#">政治政治政治政治</a>
+						</li>
+						<li class="disabled">
+							<a href="#">历史历史历史历史历史</a>
+						</li>
+
+						<li>
+							<a href="#">计算机计算机计算机计算机</a>
+						</li>
+					</ul>
+				</div>
+
+			</div>
+			<h2>1.1 代码</h2>
+			<pre class="lemonui-code" linenums="true">
+<div class="button-dropdown">
+  <button class="btn btn-default dropdown-toggle">default</button>
+  <ul class="dropdown-menu">
+    <li class="header">课程表一</li>
+    <li>
+      <a href="javascript:;">语文语文语文语文</a></li>
+    <li>
+      <a href="#">数学数学数学</a></li>
+    <li class="separator"></li>
+    <li class="header">课程表二</li>
+    <li>
+      <a href="#">政治政治政治政治</a></li>
+    <li class="disabled">
+      <a href="#">历史历史历史历史历史</a></li>
+    <li>
+      <a href="#">计算机计算机计算机计算机</a></li>
+  </ul>
+</div>
+</pre>
+
+			<h2>2. 分裂式按钮下拉菜单</h2>
+			<div>分裂式按钮下拉菜单功能需要在div中引用<code>.button-dropdown</code>，扩展的是ui中按钮的功能,分列式的需要在button中引用<code>.dropdown-split</code>来表示是分列式的按钮菜单，还需要在在button中需要引用<code>.dropdown-toggle</code>来表示按钮具有可以点击展开下拉菜单的功能。
+				<br/>菜单中的li使用<code>.header</code>来表示是头部标题，使用<code>.sparator</code>来显示一条分割线，使用<code>.disabled</code>来禁用当前的下拉选项</div>
+			<div class="code-example">
+				<div class="button-dropdown">
+					<button class="btn btn-default">default</button>
+					<button class="btn btn-default dropdown-split dropdown-toggle"></button>
+					<ul class="dropdown-menu">
+						<li class="header">课程表一</li>
+						<li>
+							<a href="javascript:;">语文语文语文语文</a>
+						</li>
+						<li>
+							<a href="#">数学数学数学</a>
+						</li>
+						<li class="separator"></li>
+						<li class="header">课程表二</li>
+						<li>
+							<a href="#">政治政治政治政治</a>
+						</li>
+						<li class="disabled">
+							<a href="#">历史历史历史历史历史</a>
+						</li>
+
+						<li>
+							<a href="#">计算机计算机计算机计算机</a>
+						</li>
+					</ul>
+				</div>
+
+				<div class="button-dropdown">
+					<button class="btn btn-primary">primary</button>
+					<button class="btn btn-primary dropdown-split dropdown-toggle"></button>
+					<ul class="dropdown-menu">
+						<li class="header">课程表一</li>
+						<li>
+							<a href="javascript:;">语文语文语文语文</a>
+						</li>
+						<li>
+							<a href="#">数学数学数学</a>
+						</li>
+						<li class="separator"></li>
+						<li class="header">课程表二</li>
+						<li>
+							<a href="#">政治政治政治政治</a>
+						</li>
+						<li class="disabled">
+							<a href="#">历史历史历史历史历史</a>
+						</li>
+
+						<li>
+							<a href="#">计算机计算机计算机计算机</a>
+						</li>
+					</ul>
+				</div>
+				<div class="button-dropdown">
+					<button class="btn btn-success">success</button>
+					<button class="btn btn-success dropdown-split dropdown-toggle"></button>
+					<ul class="dropdown-menu">
+						<li class="header">课程表一</li>
+						<li>
+							<a href="javascript:;">语文语文语文语文</a>
+						</li>
+						<li>
+							<a href="#">数学数学数学</a>
+						</li>
+						<li class="separator"></li>
+						<li class="header">课程表二</li>
+						<li>
+							<a href="#">政治政治政治政治</a>
+						</li>
+						<li class="disabled">
+							<a href="#">历史历史历史历史历史</a>
+						</li>
+
+						<li>
+							<a href="#">计算机计算机计算机计算机</a>
+						</li>
+					</ul>
+				</div>
+
+				<div class="button-dropdown">
+					<button class="btn btn-info">info</button>
+					<button class="btn btn-info dropdown-split dropdown-toggle"></button>
+					<ul class="dropdown-menu">
+						<li class="header">课程表一</li>
+						<li>
+							<a href="javascript:;">语文语文语文语文</a>
+						</li>
+						<li>
+							<a href="#">数学数学数学</a>
+						</li>
+						<li class="separator"></li>
+						<li class="header">课程表二</li>
+						<li>
+							<a href="#">政治政治政治政治</a>
+						</li>
+						<li class="disabled">
+							<a href="#">历史历史历史历史历史</a>
+						</li>
+
+						<li>
+							<a href="#">计算机计算机计算机计算机</a>
+						</li>
+					</ul>
+				</div>
+
+				<div class="button-dropdown">
+					<button class="btn btn-warning">warning</button>
+					<button class="btn btn-warning dropdown-split dropdown-toggle"></button>
+					<ul class="dropdown-menu">
+						<li class="header">课程表一</li>
+						<li>
+							<a href="javascript:;">语文语文语文语文</a>
+						</li>
+						<li>
+							<a href="#">数学数学数学</a>
+						</li>
+						<li class="separator"></li>
+						<li class="header">课程表二</li>
+						<li>
+							<a href="#">政治政治政治政治</a>
+						</li>
+						<li class="disabled">
+							<a href="#">历史历史历史历史历史</a>
+						</li>
+
+						<li>
+							<a href="#">计算机计算机计算机计算机</a>
+						</li>
+					</ul>
+				</div>
+
+				<div class="button-dropdown">
+					<button class="btn btn-danger">danger</button>
+					<button class="btn btn-danger dropdown-split dropdown-toggle"></button>
+					<ul class="dropdown-menu">
+						<li class="header">课程表一</li>
+						<li>
+							<a href="javascript:;">语文语文语文语文</a>
+						</li>
+						<li>
+							<a href="#">数学数学数学</a>
+						</li>
+						<li class="separator"></li>
+						<li class="header">课程表二</li>
+						<li>
+							<a href="#">政治政治政治政治</a>
+						</li>
+						<li class="disabled">
+							<a href="#">历史历史历史历史历史</a>
+						</li>
+
+						<li>
+							<a href="#">计算机计算机计算机计算机</a>
+						</li>
+					</ul>
+				</div>
+
+			</div>
+			<h2>2.1 代码</h2>
+			<pre class="lemonui-code" linenums="true">
+<div class="button-dropdown">
+  <button class="btn btn-default">default</button>
+  <button class="btn btn-default dropdown-split dropdown-toggle"></button>
+  <ul class="dropdown-menu">
+    <li class="header">课程表一</li>
+    <li>
+      <a href="javascript:;">语文语文语文语文</a></li>
+    <li>
+      <a href="#">数学数学数学</a></li>
+    <li class="separator"></li>
+    <li class="header">课程表二</li>
+    <li>
+      <a href="#">政治政治政治政治</a></li>
+    <li class="disabled">
+      <a href="#">历史历史历史历史历史</a></li>
+    <li>
+      <a href="#">计算机计算机计算机计算机</a></li>
+  </ul>
+</div>
+</pre>
+			<!-- 文档结束-->
+		</div>
+	</body>

@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+		<title>Lemon-ui示例》Web组件》页面元素类组件》CSS3 动画</title>
+		<link rel="stylesheet" href="../css/index.css" />
+		<!--引入lemon-ui的css -->
+		<link rel="stylesheet" href="../../dist/css/lemon-ui.css" />
+		<!--引用jquery -->
+		<script type="text/javascript" src="../../lib/jquery/jquery.min.js"></script>
+		<!--引入lemon-ui的js -->
+		<script type="text/javascript" src="../../dist/js/lemon-ui.js"></script>
+		<script type="text/javascript" src="../js/index.js"></script>
+		<!--引入谷歌的prettify代码高亮插件 -->
+		<script type="text/javascript" src="../../lib/prettify/prettify.js"></script>
+		<!--[if lt IE 9]>
+        <script type="text/javascript" src="../../lib/html5.js"></script>
+		<script type="text/javascript" src="../../lib/respond.min.js"></script>
+		<script type="text/javascript" src="../../lib/PIE_IE678.js"></script>
+        <![endif]-->
+	</head>
+
+	<body>
+		<!--顶部内容-->
+		<div class="content-navbar">
+			<span class="breadcrumb">
+				<a href="javascript:void(0);" class="first"><i class="le le-shouye font-13" style="color:#333;"></i>首页</a>
+				<a href="javascript:void(0);" class="second">Web组件</a>
+				<a href="javascript:void(0);" class="third">页面元素类组件</a>
+				<a class="fourth current">CSS3 动画</a>
+			</span>
+		</div>
+		<!--页面主要内容-->
+		<div class="main-content-demo">
+
+			<h1>CSS3 动画</h1>
+			<hr>
+			<div>动画使用的时候需要在class中引用下面的名称，注意大小写不能错，使用js控制添加class的时候就会看到动画特效。</div>
+			<h2>1. 淡入淡出动画</h2>
+			<div class="code-example">
+				<input type="button" class="btn btn-primary" value="fadeIn" />
+				<input type="button" class="btn btn-primary" value="fadeInLeft" />
+				<input type="button" class="btn btn-primary" value="fadeInRight" />
+				<input type="button" class="btn btn-primary" value="fadeInUp" />
+				<input type="button" class="btn btn-primary" value="fadeInDown" />
+				</p>
+				<input type="button" class="btn btn-primary" value="fadeOut" />
+				<input type="button" class="btn btn-primary" value="fadeOutLeft" />
+				<input type="button" class="btn btn-primary" value="fadeOutRight" />
+				<input type="button" class="btn btn-primary" value="fadeOutUp" />
+				<input type="button" class="btn btn-primary" value="fadeOutDown" />
+			</div>
+
+			<h2>2. 滑入滑出动画</h2>
+			<div class="code-example">
+				<input type="button" class="btn btn-primary" value="slideInUp" />
+				<input type="button" class="btn btn-primary" value="slideInDown" />
+				<input type="button" class="btn btn-primary" value="slideInLeft" />
+				<input type="button" class="btn btn-primary" value="slideInRight" />
+				</p>
+				<input type="button" class="btn btn-primary" value="slideOutUp" />
+				<input type="button" class="btn btn-primary" value="slideOutDown" />
+				<input type="button" class="btn btn-primary" value="slideOutLeft" />
+				<input type="button" class="btn btn-primary" value="slideOutRight" />
+			</div>
+
+			<h2>3. 放大缩小动画</h2>
+			<div class="code-example">
+				<input type="button" class="btn btn-primary" value="zoomIn" />
+				<input type="button" class="btn btn-primary" value="zoomInUp" />
+				<input type="button" class="btn btn-primary" value="zoomInDown" />
+				<input type="button" class="btn btn-primary" value="zoomInLeft" />
+				<input type="button" class="btn btn-primary" value="zoomInRight" />
+				</p>
+				<input type="button" class="btn btn-primary" value="zoomOut" />
+				<input type="button" class="btn btn-primary" value="zoomOutUp" />
+				<input type="button" class="btn btn-primary" value="zoomOutDown" />
+				<input type="button" class="btn btn-primary" value="zoomOutLeft" />
+				<input type="button" class="btn btn-primary" value="zoomOutRight" />
+			</div>
+
+			<h2>4. 翻转动画</h2>
+			<div class="code-example">
+				<input type="button" class="btn btn-primary" value="flip" />
+				<input type="button" class="btn btn-primary" value="flipInX" />
+				<input type="button" class="btn btn-primary" value="flipInY" />
+				<input type="button" class="btn btn-primary" value="flipOutX" />
+				<input type="button" class="btn btn-primary" value="flipOutY" />
+				</p>
+
+				<input type="button" class="btn btn-primary" value="perspectiveDown" />
+				<input type="button" class="btn btn-primary" value="perspectiveUp" />
+				<input type="button" class="btn btn-primary" value="perspectiveLeft" />
+				<input type="button" class="btn btn-primary" value="perspectiveRight" />
+				<input type="button" class="btn btn-primary" value="perspectiveDownRetourn" /></p>
+				<input type="button" class="btn btn-primary" value="perspectiveUpRetourn" />
+				<input type="button" class="btn btn-primary" value="perspectiveLeftRetourn" />
+				<input type="button" class="btn btn-primary" value="perspectiveRightRetourn" />
+
+			</div>
+
+			<h2>5. 旋转动画</h2>
+			<div class="code-example">
+				<input type="button" class="btn btn-primary" value="rotateIn" />
+				<input type="button" class="btn btn-primary" value="rotateInDownLeft" />
+				<input type="button" class="btn btn-primary" value="rotateInDownRight" />
+				<input type="button" class="btn btn-primary" value="rotateInUpLeft" />
+				<input type="button" class="btn btn-primary" value="rotateInUpRight" />
+				</p>
+				<input type="button" class="btn btn-primary" value="rotateOut" />
+				<input type="button" class="btn btn-primary" value="rotateOutDownLeft" />
+				<input type="button" class="btn btn-primary" value="rotateOutDownRight" />
+				<input type="button" class="btn btn-primary" value="rotateOutUpLeft" />
+				<input type="button" class="btn btn-primary" value="rotateOutUpRight" />
+			</div>
+
+			<h2>6. 引起注意的动画特效</h2>
+			<div class="code-example">
+				<input type="button" class="btn btn-primary" value="bounce" />
+				<input type="button" class="btn btn-primary" value="bounceIn" />
+				<input type="button" class="btn btn-primary" value="bounceOut" />
+				<input type="button" class="btn btn-primary" value="flash" />
+				<input type="button" class="btn btn-primary" value="pulse" />
+				<input type="button" class="btn btn-primary" value="shake" />
+				<input type="button" class="btn btn-primary" value="swing" />
+				<input type="button" class="btn btn-primary" value="tada" />
+				<input type="button" class="btn btn-primary" value="wobble" />
+			</div>
+
+			<h2>6. 文字、链接hover动画</h2>
+			<div class="code-example">
+				<a href="#" class="btn btn-default hoverUnderlineFromLeft">hoverUnderlineFromLeft</a>&nbsp;&nbsp;
+				<a href="#" class="btn btn-default hoverUnderlineFromCenter">hoverUnderlineFromCenter</a>&nbsp;&nbsp;
+				<a href="#" class="btn btn-default hoverUnderlineFromRight">hoverUnderlineFromRight</a>&nbsp;&nbsp;
+				<a href="#" class="btn btn-default hoverUnderlineReveal">hoverUnderlineReveal</a>
+				</p>
+				<a href="#" class="btn btn-default hoverOverlineFromLeft">hoverOverlineFromLeft</a>&nbsp;&nbsp;
+				<a href="#" class="btn btn-default hoverOverlineFromCenter">hoverOverlineFromCenter</a>&nbsp;&nbsp;
+				<a href="#" class="btn btn-default hoverOverlineFromRight">hoverOverlineFromRight</a>&nbsp;&nbsp;
+				<a href="#" class="btn btn-default hoverOverlineFromReveal">hoverOverlineFromReveal</a>&nbsp;&nbsp;
+			</div>
+
+			<h2>7. 3D空间切换动画</h2>
+			<div class="code-example">
+				<input type="button" class="btn btn-primary" value="spaceInUp" />
+				<input type="button" class="btn btn-primary" value="spaceInDown" />
+				<input type="button" class="btn btn-primary" value="spaceInLeft" />
+				<input type="button" class="btn btn-primary" value="spaceInRight" />
+				<input type="button" class="btn btn-primary" value="spaceOutUp" />
+				<input type="button" class="btn btn-primary" value="spaceOutDown" />
+				<input type="button" class="btn btn-primary" value="spaceOutLeft" />
+				<input type="button" class="btn btn-primary" value="spaceOutRight" />
+			</div>
+
+			<h2>7. Loading旋转动画</h2>
+			<div class="code-example" >
+				<i class="le le-spinner1 font-30 animated spin" style="color:#333;"></i>
+				<i class="le le-spinner2 font-30 animated spin" style="color:#333;"></i>
+				<i class="le le-spinner3 font-30 animated spin" style="color:#333;"></i>
+				<i class="le le-spinner4 font-30 animated spin" style="color:#333;"></i>
+				<i class="le le-spinner5 font-30 animated spin" style="color:#333;"></i>
+				<i class="le le-spinner6 font-30 animated spin" style="color:#333;"></i>
+				<i class="le le-spinner7 font-30 animated spin" style="color:#333;"></i>
+				<i class="le le-spinner8 font-30 animated spin" style="color:#333;"></i>
+			</div>
+
+			<h2>8. 其他动画特效</h2>
+			<div class="code-example">
+				<input type="button" class="btn btn-primary" value="slideInUpBit" />
+				<input type="button" class="btn btn-primary" value="magic" />
+				<input type="button" class="btn btn-primary" value="twisterInDown" />
+				<input type="button" class="btn btn-primary" value="twisterInUp" />
+				<input type="button" class="btn btn-primary" value="swap" />
+				<input type="button" class="btn btn-primary" value="puffIn" />
+				<input type="button" class="btn btn-primary" value="puffOut" />
+				<input type="button" class="btn btn-primary" value="vanishIn" />
+				<input type="button" class="btn btn-primary" value="vanishOut" />
+			</div>
+
+			<!-- 文档结束-->
+		</div>
+	</body>

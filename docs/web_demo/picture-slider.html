@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+		<title>Lemon-ui示例》Web组件》》导航类组件》图片轮播</title>
+		<link rel="stylesheet" href="../css/index.css" />
+		<!--引入lemon-ui的css -->
+		<link rel="stylesheet" href="../../dist/css/lemon-ui.css" />
+		<!--引用jquery -->
+		<script type="text/javascript" src="../../lib/jquery/jquery.min.js"></script>
+		<!--引入lemon-ui的js -->
+		<script type="text/javascript" src="../../dist/js/lemon-ui.js"></script>
+		<!--引入谷歌的prettify代码高亮插件 -->
+		<script type="text/javascript" src="../../lib/prettify/prettify.js"></script>
+		<!--[if lt IE 9]>
+        <script type="text/javascript" src="../../lib/html5.js"></script>
+		<script type="text/javascript" src="../../lib/respond.min.js"></script>
+		<script type="text/javascript" src="../../lib/PIE_IE678.js"></script>
+        <![endif]-->
+	</head>
+
+	<body>
+		<!--顶部内容-->
+		<div class="content-navbar">
+			<span class="breadcrumb">
+				<a href="javascript:void(0);" class="first"><i class="le le-shouye font-13" style="color:#333;"></i>首页</a>
+				<a href="javascript:void(0);" class="second">Web组件</a>
+				<a href="javascript:void(0);" class="third">导航类组件</a>
+				<a class="fourth current">图片轮播</a>
+			</span>
+		</div>
+		<!--页面主要内容-->
+		<div class="main-content-demo">
+
+			<h1>图片轮播</h1>
+			<hr>
+
+			<h2>1. 图片轮播</h2>
+			<div>图片轮播特效可以用于主页展示，使用时候需要引用<code>class="picture-slider"</code>，可以配置属性来控制导航的展示，图片容器的大小等，使用时候<code>data-slider="{origin:true,arrow:true,height:230,width:560}"</code></div>
+			<div class="code-example">
+				<div class="picture-slider" data-slider="{origin:true,arrow:true,height:230,width:560}">
+					<ul class="picture-viewport">
+						<li>
+							<img src="http://s.amazeui.org/media/i/demos/bing-1.jpg">
+							<div class="picture-slider-desc">这是第 1 张图片</div>
+						</li>
+						<li>
+							<img src="http://s.amazeui.org/media/i/demos/bing-2.jpg">
+							<div class="picture-slider-desc">这是第 2 张图片</div>
+						</li>
+						<li>
+							<img src="http://s.amazeui.org/media/i/demos/bing-3.jpg">
+							<div class="picture-slider-desc">这是第 3 张图片</div>
+						</li>
+						<li>
+							<img src="http://s.amazeui.org/media/i/demos/bing-4.jpg">
+							<div class="picture-slider-desc">这是第 4 张图片</div>
+						</li>
+					</ul>
+				</div>
+			</div>
+			<h2>1.1 代码</h2>
+			<pre class="lemonui-code" linenums="true">
+<div class="picture-slider" data-slider="{origin:true,arrow:true,height:230,width:560}">
+  <ul class="picture-viewport">
+    <li>
+      <img src="http://s.amazeui.org/media/i/demos/bing-1.jpg">
+      <div class="picture-slider-desc">这是第 1 张图片</div></li>
+    <li>
+      <img src="http://s.amazeui.org/media/i/demos/bing-2.jpg">
+      <div class="picture-slider-desc">这是第 2 张图片</div></li>
+    <li>
+      <img src="http://s.amazeui.org/media/i/demos/bing-3.jpg">
+      <div class="picture-slider-desc">这是第 3 张图片</div></li>
+    <li>
+      <img src="http://s.amazeui.org/media/i/demos/bing-4.jpg">
+      <div class="picture-slider-desc">这是第 4 张图片</div></li>
+  </ul>
+</div>
+</pre>
+
+			<!-- 文档结束-->
+		</div>
+	</body>

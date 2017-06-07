@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+		<title>Lemon-ui示例》Web组件》布局类组件》格栅系统</title>
+		<link rel="stylesheet" href="../css/index.css" />
+		<!--引入lemon-ui的css -->
+		<link rel="stylesheet" href="../../dist/css/lemon-ui.css" />
+		<!--引用jquery -->
+		<script type="text/javascript" src="../../lib/jquery/jquery.min.js"></script>
+		<!--引入lemon-ui的js -->
+		<script type="text/javascript" src="../../dist/js/lemon-ui.js"></script>
+		<!--引入谷歌的prettify代码高亮插件 -->
+		<script type="text/javascript" src="../../lib/prettify/prettify.js"></script>
+		<!--[if lt IE 9]>
+        <script type="text/javascript" src="../../lib/html5.js"></script>
+		<script type="text/javascript" src="../../lib/respond.min.js"></script>
+		<script type="text/javascript" src="../../lib/PIE_IE678.js"></script>
+        <![endif]-->
+	</head>
+
+	<body>
+		<!--顶部内容-->
+		<div class="content-navbar">
+			<span class="breadcrumb">
+				<a href="javascript:void(0);" class="first"><i class="le le-shouye font-13" style="color:#333;"></i>首页</a>
+				<a href="javascript:void(0);" class="second">Web组件</a>
+				<a href="javascript:void(0);" class="third">布局类组件</a>
+				<a class="fourth current">格栅系统</a>
+			</span>
+		</div>
+		<!--页面主要内容-->
+		<div class="main-content-demo">
+			<!-- 文档开始-->
+			<h1>1.格栅系统</h1>
+			<hr>
+			<div>为何要栅格？ 做网页就像盖楼，地皮有了，这一块干啥，那一块干啥，提前规划很重要，只有精确到像素才能让网页看上去更规范，更便于统一维护，扩展。同时保持网站的整体风格。 栅格系统由行（row）和列（col）共同组成，通过不同的行列组合我们可以实现各种布局，内容就放在一个个的格子中，就像收纳盒一样。
+
+			</div>
+			<table class="table table-border table-hd-bg table-bordered table-striped">
+				<tr>
+					<th></th>
+					<th> 超小屏幕 <small>手机 (&lt;768px)</small> </th>
+					<th> 小屏幕 <small>平板 (≥768px)</small> </th>
+					<th> 中等屏幕 <small>桌面显示器 (≥992px)</small> </th>
+					<th> 大屏幕 <small>大桌面显示器 (≥1200px)</small> </th>
+				</tr>
+				<tr>
+					<td>栅格系统行为</th>
+						<td>总是水平排列</td>
+						<td colspan="3">开始是堆叠在一起的，当大于这些阈值时将变为水平排列C</td>
+				</tr>
+				<tr>
+					<td><code>.container</code> 最大宽度</th>
+						<td>None （自动）</td>
+						<td>750px</td>
+						<td>970px</td>
+						<td>1170px</td>
+				</tr>
+				<tr>
+					<td>类前缀</th>
+						<td><code>.col-xs-</code></td>
+						<td><code>.col-sm-</code></td>
+						<td><code>.col-md-</code></td>
+						<td><code>.col-lg-</code></td>
+				</tr>
+				<tr>
+					<td>列（column）数</th>
+						<td colspan="4">12</td>
+				</tr>
+				<tr>
+					<td>最大列（column）宽</th>
+						<td class="text-muted">自动</td>
+						<td>~62px</td>
+						<td>~81px</td>
+						<td>~97px</td>
+				</tr>
+				<tr>
+					<td>槽（gutter）宽</th>
+						<td colspan="4">30px （每列左右均有 15px）</td>
+				</tr>
+				<tr>
+					<td>可嵌套</th>
+						<td colspan="4">是</td>
+				</tr>
+				<tr>
+					<td>偏移（Offsets）</th>
+						<td colspan="4">是</td>
+				</tr>
+				<tr>
+					<td>列排序</th>
+						<td colspan="4">是</td>
+				</tr>
+			</table>
+			<div class="code-example" style="min-height:300px;">
+				<div class="row-demo">
+					<div class="row cl">
+						<div class="col-xs-12 col-sm-1">1/12</div>
+						<div class="col-xs-12 col-sm-1">1/12</div>
+						<div class="col-xs-12 col-sm-1">1/12</div>
+						<div class="col-xs-12 col-sm-1">1/12</div>
+						<div class="col-xs-12 col-sm-1">1/12</div>
+						<div class="col-xs-12 col-sm-1">1/12</div>
+						<div class="col-xs-12 col-sm-1">1/12</div>
+						<div class="col-xs-12 col-sm-1">1/12</div>
+						<div class="col-xs-12 col-sm-1">1/12</div>
+						<div class="col-xs-12 col-sm-1">1/12</div>
+						<div class="col-xs-12 col-sm-1">1/12</div>
+						<div class="col-xs-12 col-sm-1">1/12</div>
+					</div>
+					<div class="row cl">
+						<div class="col-xs-12 col-sm-2">2/12(1/6)</div>
+						<div class="col-xs-12 col-sm-4">4/12(1/3)</div>
+						<div class="col-xs-12 col-sm-6">6/12(1/2)</div>
+					</div>
+					<div class="row cl">
+						<div class="col-xs-12 col-sm-3">3/12(1/4)</div>
+						<div class="col-xs-12 col-sm-9">9/12(3/4)</div>
+					</div>
+					<div class="row cl">
+						<div class="col-xs-12 col-sm-6">6/12(1/2)</div>
+						<div class="col-xs-12 col-sm-6">6/12(1/2)</div>
+					</div>
+					<div class="row cl">
+						<div class="col-xs-12 col-sm-12">12/12(1)</div>
+					</div>
+					<p>通过追加 col-md-offset- 我们可以实现偏移</p>
+					<div class="row cl">
+						<div class="col-sm-3 col-sm-offset-3">偏移3/12(1/4)</div>
+					</div>
+					<div class="row cl">
+						<div class="col-sm-4 col-sm-offset-4">偏移4/12(1/3)</div>
+					</div>
+					<div class="row cl">
+						<div class="col-sm-6 col-sm-offset-6">偏移6/12(1/2)</div>
+					</div>
+				</div>
+			</div>
+			<h2>2.媒体查询</h2>
+			<div>在栅格系统中，我们在 Less 文件中使用以下媒体查询（media query）来创建关键的分界点阈值。</div>
+			<pre class="lemonui-code" linenums="true">
+/* 超小屏幕（手机，小于 768px） */
+/* 没有任何媒体查询相关的代码，因为这在 Bootstrap 中是默认的（还记得 Bootstrap 是移动设备优先的吗？） */
+
+/* 小屏幕（平板，大于等于 768px） */
+@media (min-width: @screen-sm-min) { ... }
+
+/* 中等屏幕（桌面显示器，大于等于 992px） */
+@media (min-width: @screen-md-min) { ... }
+
+/* 大屏幕（大桌面显示器，大于等于 1200px） */
+@media (min-width: @screen-lg-min) { ... }
+</pre>
+			<h2>3.响应式隐藏显示</h2>
+			<div>主要用于针对不同屏幕尺寸，隐藏或显示页面内容</div>
+			<table class="table table-hd-bg table-border table-bordered">
+				<thead>
+					<tr>
+						<th></th>
+						<th> 超小屏幕 <small>手机 (&lt;768px)</small> </th>
+						<th> 小屏幕 <small>平板 (≥768px)</small> </th>
+						<th> 中等屏幕 <small>桌面 (≥992px)</small> </th>
+						<th> 大屏幕 <small>桌面 (≥1200px)</small> </th>
+					</tr>
+				</thead>
+				<tbody>
+					<tr>
+						<td><code>.visible-xs-*</code></th>
+							<td class="is-visible">可见</td>
+							<td class="is-hidden">隐藏</td>
+							<td class="is-hidden">隐藏</td>
+							<td class="is-hidden">隐藏</td>
+					</tr>
+					<tr>
+						<td><code>.visible-sm-*</code></th>
+							<td class="is-hidden">隐藏</td>
+							<td class="is-visible">可见</td>
+							<td class="is-hidden">隐藏</td>
+							<td class="is-hidden">隐藏</td>
+					</tr>
+					<tr>
+						<td><code>.visible-md-*</code></th>
+							<td class="is-hidden">隐藏</td>
+							<td class="is-hidden">隐藏</td>
+							<td class="is-visible">可见</td>
+							<td class="is-hidden">隐藏</td>
+					</tr>
+					<tr>
+						<td><code>.visible-lg-*</code></th>
+							<td class="is-hidden">隐藏</td>
+							<td class="is-hidden">隐藏</td>
+							<td class="is-hidden">隐藏</td>
+							<td class="is-visible">可见</td>
+					</tr>
+				</tbody>
+				<tbody>
+					<tr>
+						<td><code>.hidden-xs</code></th>
+							<td class="is-hidden">隐藏</td>
+							<td class="is-visible">可见</td>
+							<td class="is-visible">可见</td>
+							<td class="is-visible">可见</td>
+					</tr>
+					<tr>
+						<td><code>.hidden-sm</code></th>
+							<td class="is-visible">可见</td>
+							<td class="is-hidden">隐藏</td>
+							<td class="is-visible">可见</td>
+							<td class="is-visible">可见</td>
+					</tr>
+					<tr>
+						<td><code>.hidden-md</code></th>
+							<td class="is-visible">可见</td>
+							<td class="is-visible">可见</td>
+							<td class="is-hidden">隐藏</td>
+							<td class="is-visible">可见</td>
+					</tr>
+					<tr>
+						<td><code>.hidden-lg</code></th>
+							<td class="is-visible">可见</td>
+							<td class="is-visible">可见</td>
+							<td class="is-visible">可见</td>
+							<td class="is-hidden">隐藏</td>
+					</tr>
+				</tbody>
+			</table>
+			<table class="table table-hd-bg table-border table-bordered margin-t-10">
+				<thead>
+					<tr>
+						<th>类组</th>
+						<th>CSS <code>display</code></th>
+					</tr>
+				</thead>
+				<tbody>
+					<tr>
+						<td scope="row"><code>.visible-*-block</code></th>
+							<td><code>display: block;</code></td>
+					</tr>
+					<tr>
+						<td scope="row"><code>.visible-*-inline</code></th>
+							<td><code>display: inline;</code></td>
+					</tr>
+					<tr>
+						<td scope="row"><code>.visible-*-inline-block</code></th>
+							<td><code>display: inline-block;</code></td>
+					</tr>
+				</tbody>
+			</table>
+
+			<!-- 文档结束-->
+		</div>
+	</body>

@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+		<title>Lemon-ui示例》Web组件》页面元素类组件》折叠</title>
+		<link rel="stylesheet" href="../css/index.css" />
+		<!--引入lemon-ui的css -->
+		<link rel="stylesheet" href="../../dist/css/lemon-ui.css" />
+		<!--引用jquery -->
+		<script type="text/javascript" src="../../lib/jquery/jquery.min.js"></script>
+		<!--引入lemon-ui的js -->
+		<script type="text/javascript" src="../../dist/js/lemon-ui.js"></script>
+		<!--引入谷歌的prettify代码高亮插件 -->
+		<script type="text/javascript" src="../../lib/prettify/prettify.js"></script>
+		<!--[if lt IE 9]>
+        <script type="text/javascript" src="../../lib/html5.js"></script>
+		<script type="text/javascript" src="../../lib/respond.min.js"></script>
+		<script type="text/javascript" src="../../lib/PIE_IE678.js"></script>
+        <![endif]-->
+	</head>
+
+	<body>
+		<!--顶部内容-->
+		<div class="content-navbar">
+			<span class="breadcrumb">
+				<a href="javascript:void(0);" class="first"><i class="le le-shouye font-13" style="color:#333;"></i>首页</a>
+				<a href="javascript:void(0);" class="second">Web组件</a>
+				<a href="javascript:void(0);" class="third">页面元素类组件</a>
+				<a class="fourth current">折叠</a>
+			</span>
+		</div>
+		<!--页面主要内容-->
+		<div class="main-content-demo">
+
+			<h1>折叠</h1>
+			<hr>
+
+			<h2>1. 折叠</h2>
+			<div>折叠菜单，在ul中引用<code>.accordtion</code>，如果需要切换点击显示多个和单个，需要使用<code>data-accordion="{openmore:true/false}"</code>属性，需要默认显示某个折叠，在li中添加<code>.current</code>样式。</div>
+			<div class="code-example">
+				<div style="width:48%;float: left!important;">
+					打开多个：
+					<ul class="accordion">
+						<li class="current">
+							<span>标题一</span>
+							<div>内容一</div>
+						</li>
+						<li>
+							<span>标题二</span>
+							<div>内容二</div>
+						</li>
+						<li>
+							<span>标题三</span>
+							<div>内容三</div>
+						</li>
+					</ul>
+				</div>
+				<div style="width:48%;float: left!important;">
+					每次只打开一个：
+					<ul class="accordion" data-accordion="{openmore:false}">
+						<li>
+							<span>标题一</span>
+							<div>内容一</div>
+						</li>
+						<li class="current">
+							<span>标题二</span>
+							<div>内容二</div>
+						</li>
+						<li>
+							<span>标题三</span>
+							<div>内容三</div>
+						</li>
+					</ul>
+				</div>
+				<div style="clear: both;"></div>
+			</div>
+			<h2>1.1 代码</h2>
+			<pre class="lemonui-code" linenums="true">
+打开多个：
+<ul class="accordion" data-accordion="{openmore:true}">
+  <li class="current">
+    <span>标题一</span>
+    <div>内容一</div>
+  </li>
+  <li>
+    <span>标题二</span>
+    <div>内容二</div>
+  </li>
+  <li>
+    <span>标题三</span>
+    <div>内容三</div>
+  </li>
+</ul>
+
+每次只打开一个：
+<ul class="accordion" data-accordion="{openmore:false}">
+  <li>
+    <span>标题一</span>
+    <div>内容一</div>
+  </li>
+  <li class="current">
+    <span>标题二</span>
+    <div>内容二</div>
+  </li>
+  <li>
+    <span>标题三</span>
+    <div>内容三</div>
+  </li>
+</ul>
+</pre>
+
+			<!-- 文档结束-->
+		</div>
+	</body>

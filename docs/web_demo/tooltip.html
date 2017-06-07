@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+		<title>Lemon-ui示例》Web组件》页面元素类组件》工具提示</title>
+		<link rel="stylesheet" href="../css/index.css" />
+		<!--引入lemon-ui的css -->
+		<link rel="stylesheet" href="../../dist/css/lemon-ui.css" />
+		<!--引用jquery -->
+		<script type="text/javascript" src="../../lib/jquery/jquery.min.js"></script>
+		<!--引入lemon-ui的js -->
+		<script type="text/javascript" src="../../dist/js/lemon-ui.js"></script>
+		<!--引入谷歌的prettify代码高亮插件 -->
+		<script type="text/javascript" src="../../lib/prettify/prettify.js"></script>
+		<!--[if lt IE 9]>
+        <script type="text/javascript" src="../../lib/html5.js"></script>
+		<script type="text/javascript" src="../../lib/respond.min.js"></script>
+		<script type="text/javascript" src="../../lib/PIE_IE678.js"></script>
+        <![endif]-->
+	</head>
+
+	<body>
+		<!--顶部内容-->
+		<div class="content-navbar">
+			<span class="breadcrumb">
+				<a href="javascript:void(0);" class="first"><i class="le le-shouye font-13" style="color:#333;"></i>首页</a>
+				<a href="javascript:void(0);" class="second">Web组件</a>
+				<a href="javascript:void(0);" class="third">页面元素类组件</a>
+				<a class="fourth current">工具提示</a>
+			</span>
+		</div>
+		<!--页面主要内容-->
+		<div class="main-content-demo">
+
+			<h1>工具提示</h1>
+			<hr>
+
+			<h2>1. 基本样式</h2>
+			<div>tooltip基本样式</div>
+			<div class="code-example">
+				<div class='tooltip tooltip-default left' style="position: relative;">
+					this is a tooltip on left！
+				</div>&nbsp;&nbsp;
+				<div class='tooltip tooltip-default top' style="position: relative;">
+					this is a tooltip on top！
+				</div>&nbsp;&nbsp;
+				<div class='tooltip tooltip-default bottom' style="position: relative;">
+					this is a tooltip on bottom！
+				</div>&nbsp;&nbsp;
+				<div class='tooltip tooltip-default right' style="position: relative;">
+					this is a tooltip on right！
+				</div>
+			</div>
+
+			<h2>2. 主题效果</h2>
+			<div>tooltip提供了多种样式颜色供使用，下面是展示的样例，具体使用在第3节中介绍。</div>
+			<div class="code-example">
+				默认主题：
+				<div style="margin-bottom:20px;">
+					<div class='tooltip tooltip-default left' style="position: relative;">
+						this is a tooltip on left！
+					</div>&nbsp;&nbsp;
+					<div class='tooltip tooltip-default top' style="position: relative;">
+						this is a tooltip on top！
+					</div>&nbsp;&nbsp;
+					<div class='tooltip tooltip-default bottom' style="position: relative;">
+						this is a tooltip on bottom！
+					</div>&nbsp;&nbsp;
+					<div class='tooltip tooltip-default right' style="position: relative;">
+						this is a tooltip on right！
+					</div>
+				</div>
+
+				primary主题：
+				<div style="margin-bottom:20px;">
+					<div class='tooltip tooltip-primary left' style="position: relative;">
+						this is a tooltip on left！
+					</div>&nbsp;&nbsp;
+					<div class='tooltip tooltip-primary top' style="position: relative;">
+						this is a tooltip on top！
+					</div>&nbsp;&nbsp;
+					<div class='tooltip tooltip-primary bottom' style="position: relative;">
+						this is a tooltip on bottom！
+					</div>&nbsp;&nbsp;
+					<div class='tooltip tooltip-primary right' style="position: relative;">
+						this is a tooltip on right！
+					</div>
+				</div>
+
+				success主题：
+				<div style="margin-bottom:20px;">
+					<div class='tooltip tooltip-success left' style="position: relative;">
+						this is a tooltip on left！
+					</div>&nbsp;&nbsp;
+					<div class='tooltip tooltip-success top' style="position: relative;">
+						this is a tooltip on top！
+					</div>&nbsp;&nbsp;
+					<div class='tooltip tooltip-success bottom' style="position: relative;">
+						this is a tooltip on bottom！
+					</div>&nbsp;&nbsp;
+					<div class='tooltip tooltip-success right' style="position: relative;">
+						this is a tooltip on right！
+					</div>
+				</div>
+
+				info主题：
+				<div style="margin-bottom:20px;">
+					<div class='tooltip tooltip-info left' style="position: relative;">
+						this is a tooltip on left！
+					</div>&nbsp;&nbsp;
+					<div class='tooltip tooltip-info top' style="position: relative;">
+						this is a tooltip on top！
+					</div>&nbsp;&nbsp;
+					<div class='tooltip tooltip-info bottom' style="position: relative;">
+						this is a tooltip on bottom！
+					</div>&nbsp;&nbsp;
+					<div class='tooltip tooltip-info right' style="position: relative;">
+						this is a tooltip on right！
+					</div>
+				</div>
+
+				warning主题：
+				<div style="margin-bottom:20px;">
+					<div class='tooltip tooltip-warning left' style="position: relative;">
+						this is a tooltip on left！
+					</div>&nbsp;&nbsp;
+					<div class='tooltip tooltip-warning top' style="position: relative;">
+						this is a tooltip on top！
+					</div>&nbsp;&nbsp;
+					<div class='tooltip tooltip-warning bottom' style="position: relative;">
+						this is a tooltip on bottom！
+					</div>&nbsp;&nbsp;
+					<div class='tooltip tooltip-warning right' style="position: relative;">
+						this is a tooltip on right！
+					</div>
+				</div>
+
+				danger主题：
+				<div style="margin-bottom:20px;">
+					<div class='tooltip tooltip-danger left' style="position: relative;">
+						this is a tooltip on left！
+					</div>&nbsp;&nbsp;
+					<div class='tooltip tooltip-danger top' style="position: relative;">
+						this is a tooltip on top！
+					</div>&nbsp;&nbsp;
+					<div class='tooltip tooltip-danger bottom' style="position: relative;">
+						this is a tooltip on bottom！
+					</div>&nbsp;&nbsp;
+					<div class='tooltip tooltip-danger right' style="position: relative;">
+						this is a tooltip on right！
+					</div>
+				</div>
+
+			</div>
+
+			<h2>3. 实际应用</h2>k
+			<div class="code-example" align="center">
+				<input type="button" class="btn btn-default" data-toggle="tooltip" data-tooltip="{placement:'left', theme:'tooltip-default', title:'青春是一首优美的旋律，青春是一首安静的诗歌'}" value="default" />
+				<input type="button" class="btn btn-primary" data-toggle="tooltip" data-tooltip="{placement:'top', theme:'tooltip-primary', title:'青春是一首优美的旋律，青春是一首安静的诗歌'}" value="primary" />
+				<input type="button" class="btn btn-info" data-toggle="tooltip" data-tooltip="{placement:'bottom', theme:'tooltip-info', title:'t青春是一首优美的旋律，青春是一首安静的诗歌'}" value="info" />
+				<input type="button" class="btn btn-success" data-toggle="tooltip" data-tooltip="{placement:'right', theme:'tooltip-success', title:'青春是一首优美的旋律，青春是一首安静的诗歌'}" value="success" />
+				<input type="button" class="btn btn-warning" data-toggle="tooltip" data-tooltip="{placement:'bottom', theme:'tooltip-warning', title:'t青春是一首优美的旋律，青春是一首安静的诗歌'}" value="warning" />
+				<input type="button" class="btn btn-danger" data-toggle="tooltip" data-tooltip="{placement:'right', theme:'tooltip-danger', title:'青春是一首优美的旋律，青春是一首安静的诗歌'}" value="danger" />
+			</div>
+			<h2>3.1 代码</h2>
+			<pre class="lemonui-code" linenums="true">
+<input type="button" class="btn btn-default" data-toggle="tooltip" data-tooltip="{placement:'left', title:'tooltip-left', theme:'tooltip-primary'}" value="tooltip-left" />
+<input type="button" class="btn btn-default" data-toggle="tooltip" data-tooltip="{placement:'top', title:'tooltip-top', theme:'tooltip-primary'}" value="tooltip-top" />
+<input type="button" class="btn btn-default" data-toggle="tooltip" data-tooltip="{placement:'bottom', title:'tooltip-bottom', theme:'tooltip-primary'}" value="tooltip-bottom" />
+<input type="button" class="btn btn-default" data-toggle="tooltip" data-tooltip="{placement:'right', title:'tooltip-right', theme:'tooltip-primary'}" value="tooltip-right" />
+</pre>
+			<!-- 文档结束-->
+		</div>
+	</body>

@@ -1,0 +1,347 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+		<title>Lemon-ui示例》CSS》HTML元素》表单</title>
+		<link rel="stylesheet" href="../css/index.css" />
+		<!--引入lemon-ui的css -->
+		<link rel="stylesheet" href="../../dist/css/lemon-ui.css" />
+		<!--引用jquery -->
+		<script type="text/javascript" src="../../lib/jquery/jquery.min.js"></script>
+		<!--引入lemon-ui的js -->
+		<script type="text/javascript" src="../../dist/js/lemon-ui.js"></script>
+		<!--引入谷歌的prettify代码高亮插件 -->
+		<script type="text/javascript" src="../../lib/prettify/prettify.js"></script>
+		<!--引入表单验证插件-->
+		<link rel="stylesheet" href="../../lib/validation/css/jquery.validationEngine.css" />
+		<script type="text/javascript" src="../../lib/validation/js/jquery.validationEngine-zh_CN.js"></script>
+		<script type="text/javascript" src="../../lib/validation/js/jquery.validationEngine.js"></script>
+
+		<!--[if lt IE 9]>
+        <script type="text/javascript" src="../../lib/html5.js"></script>
+		<script type="text/javascript" src="../../lib/respond.min.js"></script>
+		<script type="text/javascript" src="../../lib/PIE_IE678.js"></script>
+        <![endif]-->
+
+	</head>
+
+	<body>
+		<!--顶部内容-->
+		<div class="content-navbar">
+			<span class="breadcrumb">
+				<a href="javascript:void(0);" class="first"><i class="le le-shouye font-13" style="color:#333;"></i>首页</a>
+				<a href="javascript:void(0);" class="second">CSS</a>
+				<a href="javascript:void(0);" class="third">HTML元素</a>
+				<a class="fourth current">表单</a>
+			</span>
+		</div>
+		<!--页面主要内容-->
+		<div class="main-content-demo">
+			<!-- 文档开始-->
+			<h1>表单</h1>
+			<hr> 美化表单中各个组件的样式,包括文本框，文本域，下拉框，复选单选等常用表单元素。
+
+			<h2>1.表单样式</h2>
+			<div class="code-example">
+				<table>
+					<tr style="height:50px;">
+						<td align="right" width="10%">标题：</td>
+						<td align="left" width="90%"><input type="text" class="input-text" placeholder="请输入标题" /></td>
+					</tr>
+					<tr style="height:50px;">
+						<td align="right" width="10%">只读的标题：</td>
+						<td align="left" width="90%"><input type="text" readonly class="input-text" placeholder="请输入标题" /></td>
+					</tr>
+					<tr style="height:50px;">
+						<td align="right" width="10%">被禁用标题：</td>
+						<td align="left" width="90%"><input type="text" disabled class="input-text" placeholder="请输入标题" /></td>
+					</tr>
+					<tr style="height:50px;">
+						<td align="right" width="10%">密码：</td>
+						<td align="left" width="90%"><input type="password" class="input-text" placeholder="请输入密码" /></td>
+					</tr>
+					<tr style="height:50px;">
+						<td align="right" width="10%">密码显示开关：</td>
+						<td align="left" width="90%"><input type="password" class="input-text" placeholder="请输入密码" visiblity="true" /></td>
+					</tr>
+					<tr style="height:50px;">
+						<td align="right" width="10%">选择城市：</td>
+						<td align="left" width="90%">
+							<select>
+								<option value="">请选择</option>
+								<option value="">北京市</option>
+								<option value="">上海市</option>
+								<option value="">广州市</option>
+								<option value="">深圳市</option>
+							</select>
+						</td>
+					</tr>
+					<tr style="height:50px;">
+						<td align="right" width="10%">开关：</td>
+						<td align="left" width="90%">
+							<span class="input-switch"><input type="checkbox" id="switch-1" /><label for="switch-1" data-on="开"></label></span>
+							<span class="input-switch"><input type="checkbox" checked id="switch-2" /><label for="switch-2"></label></span>
+							<span class="input-switch"><input type="checkbox" disabled id="switch-3" /><label for="switch-3"></label></span>
+							<span class="input-switch"><input type="checkbox" disabled checked id="switch-4" /><label for="switch-4"></label></span>
+						</td>
+					</tr>
+					<tr style="height:50px;">
+						<td align="right" width="10%">复选框： </td>
+						<td align="left" width="90%">
+							<span class="input-checkbox"><input type="checkbox" value="1" id="checkbox-1" disabled/><label for="checkbox-1">默认未选择&&禁用</label></span>
+							<span class="input-checkbox"><input type="checkbox" value="2" id="checkbox-2" checked disabled/><label for="checkbox-2">默认已选择&&禁用</label></span>
+							<span class="input-checkbox"><input type="checkbox" value="3" id="checkbox-3" checked/><label for="checkbox-3">默认已选择</label></span>
+							<span class="input-checkbox"><input type="checkbox"  value="4" id="checkbox-4"/><label for="checkbox-4">默认未选择 </label></span>
+						</td>
+					</tr>
+					<tr style="height:50px;">
+						<td align="right" width="10%">单选框：</td>
+						<td align="left" width="90%">
+							<span class="input-radio"><input type="radio" value="1" disabled name="radio1" id="radio-1"/><label for="radio-1">默认未选择禁用</label></span>
+							<span class="input-radio"><input type="radio" value="2" disabled name="radio1" checked id="radio-2"/><label for="radio-2">默认已选择&&禁用</label></span>
+							<span class="input-radio"><input type="radio" value="3" checked id="radio-3"/><label for="radio-3">默认已选择</label></span>
+							<span class="input-radio"><input type="radio" value="4" name="sex" id="radio-4"/><label for="radio-4">男性</label></span>
+							<span class="input-radio"><input type="radio" value="5" name="sex" id="radio-5"/><label for="radio-5">女性</label></span>
+						</td>
+					</tr>
+					<tr style="height:50px;">
+						<td align="right" width="10%">上传文件：</td>
+						<td align="left" width="90%">
+							<span class="btn-upload">
+  				                <a href="javascript:void();" class="btn btn-primary"><i class="le le-file-upload"></i> 浏览文件</a>
+  					            <input type="file" multiple name="file" class="input-file"/>
+                            </span>
+						</td>
+					</tr>
+					<tr style="height:50px;">
+						<td align="right" width="10%">带文本上传：</td>
+						<td align="left" width="90%">
+							<span class="btn-upload">
+	  				            <input class="input-text upload-url" type="text" name="upload-url" id="upload-url" readonly />
+	  				            <a href="javascript:void();" class="btn btn-primary"><i class="le le-file-upload"></i> 浏览文件</a>
+	  					        <input type="file" multiple name="file" class="input-file"/>
+                            </span>
+						</td>
+					</tr>
+					<tr style="height:50px;">
+						<td align="right" width="10%">备注：</td>
+						<td align="left" width="90%">
+							<textarea placeholder="请输入备注内容" class="input-textarea" rows="5" style="width:300px;"></textarea>
+						</td>
+					</tr>
+					<tr style="height:50px;">
+						<td colspan="2" style="padding-left:150px;">
+							<input type="button" class="btn btn-primary" value="提 交">
+							<input type="button" class="btn btn-default" value="取 消">
+						</td>
+					</tr>
+				</table>
+			</div>
+			<h2>2.文本框</h2>
+			<div class="code-example">
+				各种文本框状态：
+				<div style="height:50px;"><input type="text" class="input-text" placeholder="正常的文本框" /></div>
+				<div style="height:50px;"><input type="text" disabled class="input-text" placeholder="禁用的文本框" /></div>
+				<div style="height:50px;"><input type="text" readonly class="input-text" placeholder="只读的文本框" /></div>
+				<div style="height:50px;"><input type="password" class="input-text" placeholder="普通密码框" /></div>
+				<div style="height:50px;"><input type="password" class="input-text" visiblity="true" placeholder="密码显示切换" /></div>
+				文本框大小：
+				<div style="height:50px;"><input type="text" class="input-text size-mini" placeholder="文本框大小size-mini" /></div>
+				<div style="height:50px;"><input type="text" class="input-text size-small" placeholder="文本框大小size-small" /></div>
+				<div style="height:50px;"><input type="text" class="input-text" placeholder="文本框大小正常的" /></div>
+				<div style="height:50px;"><input type="text" class="input-text size-big" placeholder="文本框大小size-big" /></div>
+				<div style="height:50px;"><input type="text" class="input-text size-large" placeholder="文本框大小size-large" /></div>
+
+			</div>
+			<h2>2.1代码</h2>
+			<div>需要引用<code>.input-text</code>的样式，<code>placeholder</code>是html5的属性，文本框为空失去焦点显示的内容,如果需要禁用文本框，则只需要加上<code>disabled</code>属性即可。</div>
+			<pre class="lemonui-code" linenums="true">
+<input type="text" class="input-text" placeholder="请输入标题" />
+<input type="text" class="input-text" disabled placeholder="请输入标题" />
+<input type="password" class="input-text" placeholder="请输入密码" />
+<input type="password" class="input-text" visiblity="true" placeholder="切换密码显示" />
+</pre>
+			<h2>3.下拉框</h2>
+			<div class="code-example">
+				选择城市：
+				<select>
+					<option value="">请选择</option>
+					<option value="">北京市</option>
+					<option value="">上海市</option>
+					<option value="">广州市</option>
+					<option value="">深圳市</option>
+				</select>
+				</p>
+				展开下拉选项的下拉框：
+				<select multiple style="width:100px;height:200px;">
+					<option value="">请选择</option>
+					<option value="">北京市</option>
+					<option value="">上海市</option>
+					<option value="">广州市</option>
+					<option value="">深圳市</option>
+				</select>
+			</div>
+			<h2>3.1代码</h2>
+			<div>下拉框只是美化了普通的下拉框样式，改变默认的样式看起来更加的好看，下拉框如果禁用，也可以直接在<code>&lt;select&gt;</code>标签添加<code>disabled</code>属性，列表全展示需要添加<code>multiple</code>属性。</div>
+			<pre class="lemonui-code" linenums="true">
+<select>
+  <option value="">请选择</option>
+  <option value="">北京市</option>
+  <option value="">上海市</option>
+  <option value="">广州市</option>
+  <option value="">深圳市</option>
+</select>
+</pre>
+
+			<h2>4.switch开关</h2>
+			<div class="code-example">
+				<span class="input-switch"><input type="checkbox"  id="switch-11" /><label for="switch-11" data-on="开"></label></span>
+				<span class="input-switch"><input type="checkbox" checked id="switch-21" /><label for="switch-21"></label></span>
+				<span class="input-switch"><input type="checkbox" disabled id="switch-31" /><label for="switch-31"></label></span>
+				<span class="input-switch"><input type="checkbox" disabled checked id="switch-41" /><label for="switch-41"></label></span>
+			</div>
+			<h2>4.1代码</h2>
+			<div>使用switch开关有4种状态，开，关，开&&禁用，关&&禁用，需要用<code>&lt;span&gt;</code>标签引用<code>.input-switch</code>样式，还可以指定开关显示的文字，默认是on，通过<code>data-on</code>属性来指定。</div>
+			<pre class="lemonui-code" linenums="true">
+<span class="input-switch"><input type="checkbox"  id="switch-1" /><label for="switch-1" data-on="开"></label></span>
+<span class="input-switch"><input type="checkbox" checked id="switch-2" /><label for="switch-2"></label></span>
+<span class="input-switch"><input type="checkbox" disabled id="switch-3" /><label for="switch-3"></label></span>
+<span class="input-switch"><input type="checkbox" disabled checked id="switch-4" /><label for="switch-4"></label></span>
+</pre>
+
+			<h2>5.复选框</h2>
+			<div class="code-example">
+				<span class="input-checkbox"><input type="checkbox" value="1" id="checkbox-11" disabled/><label for="checkbox-11">默认未选择&&禁用</label></span>
+				<span class="input-checkbox"><input type="checkbox" value="2" id="checkbox-21" checked disabled/><label for="checkbox-21">默认已选择&&禁用</label></span>
+				<span class="input-checkbox"><input type="checkbox" value="3" id="checkbox-31" checked/><label for="checkbox-31">默认选择</label></span>
+				<span class="input-checkbox"><input type="checkbox"  value="4" id="checkbox-41"/><label for="checkbox-41">默认未选择 </label></span>
+			</div>
+			<h2>5.1代码</h2>
+			<div>复选框需要用<code>&lt;span&gt;</code>标签引用<code>.input-checkbox</code>样式，使用<code>disalbed</code>属性可以实现禁用</div>
+			<pre class="lemonui-code" linenums="true">
+<span class="input-checkbox"><input type="checkbox" value="1" id="checkbox-1" disabled/><label for="checkbox-1">默认未选择&&禁用</label></span>
+<span class="input-checkbox"><input type="checkbox" value="2" id="checkbox-2" checked disabled/><label for="checkbox-2">默认已选择&&禁用</label></span>
+<span class="input-checkbox"><input type="checkbox" value="3" id="checkbox-3" checked/><label for="checkbox-3">默认已选择</label></span>
+<span class="input-checkbox"><input type="checkbox"  value="4" id="checkbox-4"/><label for="checkbox-4">默认未选择 </label></span>
+</pre>
+
+			<h2>6.单选框</h2>
+			<div class="code-example">
+				<span class="input-radio"><input type="radio" value="1" disabled  id="radio-11"/><label for="radio-1">默认未选择禁用</label></span>
+				<span class="input-radio"><input type="radio" value="2" disabled  checked id="radio-21"/><label for="radio-2">默认已选择&&禁用</label></span>
+				<span class="input-radio"><input type="radio" value="3" checked id="radio-31"/><label for="radio-31">默认已选择</label></span>
+				<span class="input-radio"><input type="radio" value="4" name="sex" id="radio-41"/><label for="radio-41">男性</label></span>
+				<span class="input-radio"><input type="radio" value="5" name="sex" id="radio-51"/><label for="radio-51">女性</label></span>
+			</div>
+			<h2>6.1代码</h2>
+			<div>单选框需要用<code>&lt;span&gt;</code>标签引用<code>.input-radio</code>样式，使用<code>disalbed</code>属性可以实现禁用</div>
+			<pre class="lemonui-code" linenums="true">
+<span class="input-radio"><input type="radio" value="1" disabled name="radio1" id="radio-1"/><label for="radio-1">默认未选择禁用</label></span>
+<span class="input-radio"><input type="radio" value="2" disabled name="radio1" checked id="radio-2"/><label for="radio-2">默认已选择&&禁用</label></span>
+<span class="input-radio"><input type="radio" value="3" checked id="radio-3"/><label for="radio-3">默认已选择</label></span>
+<span class="input-radio"><input type="radio" value="4" name="sex" id="radio-4"/><label for="radio-4">男性</label></span>
+<span class="input-radio"><input type="radio" value="5" name="sex" id="radio-5"/><label for="radio-5">女性</label></span>
+</pre>
+
+			<h2>7.上传文件</h2>
+			<div class="code-example">
+				上传：<span class="btn-upload">
+  				        <a href="javascript:void();" class="btn btn-primary"><i class="le le-file-upload"></i> 浏览文件</a>
+  					     <input type="file" multiple name="file" class="input-file"/>
+                    </span>&nbsp; 带文本框上传： <span class="btn-upload">
+	  				 <input class="input-text upload-url" type="text" name="upload-url" id="upload-url" readonly />
+	  				  <a href="javascript:void();" class="btn btn-primary"><i class="le le-file-upload"></i> 浏览文件</a>
+	  				<input type="file" multiple name="file" class="input-file"/>
+                 </span>
+			</div>
+			<h2>7.1代码</h2>
+			<div>上传按钮的样式可以使用两种样式，其中上传样式2是带文本框的，可以动态调整文本框style的<code>width</code>属性来控制显示路径的文本框的长度。注意使用的时候除了name和id是可以变动的，样式美化引用的class必须是下面用法中指定的样式</div>
+			<pre class="lemonui-code" linenums="true">
+上传样式1：
+<span class="btn-upload">
+   <a href="javascript:void();" class="btn btn-primary"><i class="le le-file-upload"></i> 浏览文件</a>
+   <input type="file" multiple name="file" class="input-file"/>
+</span> 
+上传样式2： 
+<span class="btn-upload">
+   <input class="input-text upload-url" type="text" name="upload-url" id="upload-url" readonly />
+   <a href="javascript:void();" class="btn btn-primary"><i class="le le-file-upload"></i> 浏览文件</a>
+   <input type="file" multiple name="file" class="input-file"/>
+</span>
+</pre>
+			<h2>8.文本域</h2>
+			<div class="code-example">
+				备注：<textarea placeholder="请输入备注内容" class="input-textarea" rows="5" style="width:300px;"></textarea>
+			</div>
+			<h2>8.1代码</h2>
+			<div>需要引用<code>.input-textarea</code>的样式，<code>placeholder</code>是html5的属性，文本框为空失去焦点显示的内容,如果需要禁用文本框，则只需要加上<code>disabled</code>属性即可。</div>
+			<pre class="lemonui-code" linenums="true">
+<textarea placeholder="请输入备注内容" class="input-textarea" rows="5" style="width:300px;"></textarea>
+</pre>
+
+			<h2>9.jQuery Validation Engine 表单验证插件</h2>
+			<script type="text/javascript">
+				// 添加表单验证插件
+				$(function() {
+					$('#form-1').validationEngine();
+					$("#tijiao").click(function() {
+						if($('#form-1').validationEngine('validate')) {
+							$('#form-1').validationEngine();
+						}
+					});
+				});
+			</script>
+			<div>ui中表单验证使用的是jQuery Validation Engine 表单验证插件来完成，具体使用方法请参考
+				<a href="http://code.ciaoca.com/jquery/validation-engine" target="view_window">http://code.ciaoca.com/jquery/validation-engine/</a>，ui中lib包下面已经集成进去，使用的时候需要引用其css和js即可。</div>
+			<pre class="lemonui-code" linenums="true">
+<!-- 加入jQuery Validation Engine 表单验证插件 -->
+<link rel="stylesheet" href="../../lib/validation/css/jquery.validationEngine.css" />
+<script type="text/javascript" src="../../lib/validation/js/jquery.validationEngine-zh_CN.js"></script>
+<script type="text/javascript" src="../../lib/validation/js/jquery.validationEngine.js"></script>
+</pre>
+			<div class="code-example">
+				<form id="form-1" name="form-1">
+					<table>
+						<tr>
+							<td width="10%" height="40">用户名：</td>
+							<td><input type="text" class="input-text validate[required]" placeholder="请输入用户名" id="userName" /></td>
+						</tr>
+						<tr>
+							<td width="10%" height="40">密码：</td>
+							<td><input type="password" class="input-text validate[required]" placeholder="请输入密码" id="userPassword" /></td>
+						</tr>
+						<tr>
+							<td width="10%" height="40">爱好：</td>
+							<td>
+								<span class="input-checkbox"><input type="checkbox"  class="validate[required]" value="1" id="checkbox-12" name="checkbox-12"/><label for="checkbox-12">打球</label></span>
+								<span class="input-radio"><input type="radio" class="validate[required]" value="5"  id="radio-511" name="radio-511"/><label for="radio-511">女性</label></span>
+							</td>
+							<tr>
+								<td width="10%" height="40">选择城市：</td>
+								<td>
+									<select class="validate[required]" id="selectCity" name="selectCity">
+										<option value="">请选择</option>
+										<option value="1">北京市</option>
+										<option value="2">上海市</option>
+										<option value="3">广州市</option>
+										<option value="4">深圳市</option>
+									</select>
+								</td>
+							</tr>
+						</tr>
+						<tr>
+							<td width="10%" height="40">内容：</td>
+							<td><textarea placeholder="请输入备注内容" class="input-textarea validate[required]" placeholder="请输入内容" id="beizhu" rows="5" style="width:300px;"></textarea></td>
+						</tr>
+						<tr>
+							<td colspan="2"><input type="button" id="tijiao" class="btn btn-primary" value="提 交" /></td>
+						</tr>
+					</table>
+				</form>
+
+			</div>
+
+			<!-- 文档结束-->
+		</div>
+	</body>

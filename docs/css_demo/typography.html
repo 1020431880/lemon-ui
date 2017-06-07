@@ -1,0 +1,350 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+		<title>Lemon-ui示例》CSS》HTML元素》排版</title>
+		<link rel="stylesheet" href="../css/index.css" />
+		<!--引入lemon-ui的css -->
+		<link rel="stylesheet" href="../../dist/css/lemon-ui.css" />
+		<!--引用jquery -->
+		<script type="text/javascript" src="../../lib/jquery/jquery.min.js"></script>
+		<!--引入lemon-ui的js -->
+		<script type="text/javascript" src="../../dist/js/lemon-ui.js"></script>
+		<!--引入谷歌的prettify代码高亮插件 -->
+		<script type="text/javascript" src="../../lib/prettify/prettify.js"></script>
+		<!--[if lt IE 9]>
+        <script type="text/javascript" src="../../lib/html5.js"></script>
+		<script type="text/javascript" src="../../lib/respond.min.js"></script>
+		<script type="text/javascript" src="../../lib/PIE_IE678.js"></script>
+        <![endif]-->
+	</head>
+
+	<body>
+		<!--顶部内容-->
+		<div class="content-navbar">
+			<span class="breadcrumb">
+				<a href="javascript:void(0);" class="first"><i class="le le-shouye font-13" style="color:#333;"></i>首页</a>
+				<a href="javascript:void(0);" class="second">CSS</a>
+				<a href="javascript:void(0);" class="third">HTMl元素</a>
+				<a class="fourth current">排版</a>
+			</span>
+		</div>
+		<!--页面主要内容-->
+		<div class="main-content-demo">
+			<h1>排版</h1>
+			<hr>
+			<p>
+				<h2>1.标题</h2></p>
+			<div class="code-example">
+				<h1>h1. 大标题<small>小标题</small></h1>
+				<h2>h2. 大标题<small>小标题</small></h2>
+				<h3>h3. 大标题<small>小标题</small></h3>
+				<h4>h4. 大标题<small>小标题</small></h4>
+				<h5>h5. 大标题<small>小标题</small></h5>
+				<h6>h6. 大标题<small>小标题</small></h6>
+			</div>
+			<h3>1.1HTML代码</h3>
+
+			<pre class="lemonui-code" linenums="true">
+<h1>h1. 大标题<small>小标题</small></h1>
+<h2>h2. 大标题<small>小标题</small></h2>
+<h3>h3. 大标题<small>小标题</small></h3>
+<h4>h4. 大标题<small>小标题</small></h4>
+<h5>h5. 大标题<small>小标题</small></h5>
+<h6>h6. 大标题<small>小标题</small></h6>
+</pre>
+			<h2>2.强调</h2></p>
+			<div class="code-example">
+				<p>这是段落，向下10像素间距</p><br />
+				<smail>小型文本，是父容器字体大小的85%</smail><br />
+				<strong>重要文本，加粗显示</strong><br />
+				<em>被强调的文本，斜体显示</em><br />
+				<u>带下划线的文本</u><br />
+				<cite>引用</cite><br />
+				<mark>突出显示文本</mark><br />
+				<code>突出显示代码内容</code><br />
+				<del>带删除线的文本</del><br />
+				<p class="uppercase">guojunhui 大写字母</p>
+				<p class="lowercase">GuoJUNHUI 小写字母</p>
+				<p class="capitalize">guojunhui 首字母大写</p>
+			</div>
+			<h3>HTML代码</h3>
+			<pre class="lemonui-code" linenums="true">
+<p>这是段落，向下10像素间距</p>
+<smail>小型文本，是父容器字体大小的85%</smail>
+<strong>重要文本，加粗显示</strong>
+<em>被强调的文本，斜体显示</em>
+<u>带下划线的文本</u>
+<cite>引用</cite>
+<mark>突出显示文本</mark>
+<code>突出显示代码内容</code>
+<del>带删除线的文本</del>
+<p class="uppercase">guojunhui 大写字母</p>
+<p class="lowercase">GuoJUNHUI 小写字母</p>
+<p class="capitalize">guojunhui 首字母大写</p>
+</pre>
+
+			<h2>3.字体大小</h2></p>
+			<table class="table table-hd-bg table-bordered">
+				<tr>
+					<th width="30%">class=""</th>
+					<th width="70%">描述</th>
+				</tr>
+				<tr>
+					<td>font-12</td>
+					<td>字体12px</td>
+				</tr>
+				<tr>
+					<td>font-13</td>
+					<td>字体13px</td>
+				</tr>
+				<tr>
+					<td>font-14</td>
+					<td>字体14px</td>
+				</tr>
+				<tr>
+					<td>font-16</td>
+					<td>字体16px</td>
+				</tr>
+				<tr>
+					<td>font-18</td>
+					<td>字体18px</td>
+				</tr>
+				<tr>
+					<td>font-20</td>
+					<td>字体20px</td>
+				</tr>
+				<tr>
+					<td>font-22</td>
+					<td>字体22px</td>
+				</tr>
+				<tr>
+					<td>font-24</td>
+					<td>字体24px</td>
+				</tr>
+				<tr>
+					<td>font-26</td>
+					<td>字体26px</td>
+				</tr>
+				<tr>
+					<td>font-28</td>
+					<td>字体28px</td>
+				</tr>
+				<tr>
+					<td>font-30</td>
+					<td>字体30px</td>
+				</tr>
+				<tr>
+					<td>font-32</td>
+					<td>字体32px</td>
+				</tr>
+
+			</table>
+			<h2>4.对齐</h2></p>
+			<table class="table table-hd-bg table-bordered">
+				<tr>
+					<th width="30%">class=""</th>
+					<th width="70%">描述</th>
+				</tr>
+				<tr>
+					<td>text-l</td>
+					<td>文字水平居左</td>
+				</tr>
+				<tr>
+					<td>text-c</td>
+					<td>文字水平居中</td>
+				</tr>
+				<tr>
+					<td>text-r</td>
+					<td>文字水平居右</td>
+				</tr>
+				<tr>
+					<td>valign-t</td>
+					<td>文字垂直居上</td>
+				</tr>
+				<tr>
+					<td>valign-m</td>
+					<td>文字垂直居中</td>
+				</tr>
+				<tr>
+					<td>valign-b</td>
+					<td>文字垂直居下</td>
+				</tr>
+			</table>
+			<h2>5.定位浮动</h2></p>
+			<table class="table table-hd-bg table-bordered">
+				<tr>
+					<th width="30%">class=""</th>
+					<th width="70%">描述</th>
+				</tr>
+				<tr>
+					<td>float-l</td>
+					<td>左浮动</td>
+				</tr>
+				<tr>
+					<td>float-r</td>
+					<td>右浮动</td>
+				</tr>
+				<tr>
+					<td>float-n</td>
+					<td>浮动none</td>
+				</tr>
+				<tr>
+					<td>float-c</td>
+					<td>清除浮动</td>
+				</tr>
+				<tr>
+					<td>display-h</td>
+					<td>display="hide"隐藏</td>
+				</tr>
+				<tr>
+					<td>display-b</td>
+					<td>display="block"显示</td>
+				</tr>
+
+				<tr>
+					<td>position-a</td>
+					<td>绝对定位</td>
+				</tr>
+				<tr>
+					<td>position-f</td>
+					<td>固定</td>
+				</tr>
+				<tr>
+					<td>position-r</td>
+					<td>相对定位</td>
+				</tr>
+			</table>
+			<h2>6.文字单行溢出省略号</h2></p>
+			<div class="code-example">
+				<div class="text-overflow" style="width:300px;">我是很长很长的文字，我的所在的容器尺寸有限，所以我溢出了，并且显示省略号</div>
+			</div>
+			<pre class="lemonui-code" linenums="true">
+ <div class="text-overflow" style="width:300px;">我是很长很长的文字，我的所在的容器尺寸有限，所以我溢出了，并且显示省略号</div>
+</pre>
+
+			<h2>7.外边距</h2></p>
+			<div>.margin-t-*表示上边距，.margin-b-*表示下边距，.margin-l-*表示左边距，.margin-r-*表示右边距，.margin-*表示上下左右全部边距</br>
+				支持任何块级元素，如果行内元素要想使用margin，请使用<mark> display：block</mark> 先将其转化为块级元素
+			</div>
+			<pre class="lemonui-code" linenums="true">
+.margin-t-5{margin-top:5px}/*距上5像素*/
+.margin-t-10{margin-top:10px}/*距上10像素*/
+.margin-t-15{margin-top:15px}/*距上15像素*/
+.margin-t-20{margin-top:20px}/*距上20像素*/
+.margin-t-25{margin-top:25px}/*距上25像素*/
+.margin-t-30{margin-top:30px}/*距上30像素*/
+.margin-t-35{margin-top:35px}/*距上35像素*/
+.margin-t-40{margin-top:40px}/*距上40像素*/
+.margin-t-45{margin-top:45px}/*距上45像素*/
+.margin-t-50{margin-top:50px}/*距上50像素*/
+ 
+.margin-b-5{margin-bottom:5px}/*距下5像素*/
+.margin-b-10{margin-bottom:10px}/*距下10像素*/
+.margin-b-15{margin-bottom:15px}/*距下15像素*/
+.margin-b-20{margin-bottom:20px}/*距下20像素*/
+.margin-b-25{margin-bottom:25px}/*距下25像素*/
+.margin-b-30{margin-bottom:30px}/*距下30像素*/
+.margin-b-35{margin-bottom:35px}/*距下35像素*/
+.margin-b-40{margin-bottom:40px}/*距下40像素*/
+.margin-b-45{margin-bottom:45px}/*距下45像素*/
+.margin-b-50{margin-bottom:50px}/*距下50像素*/
+ 
+.margin-l-5{margin-left:5px}/*距左5像素*/
+.margin-l-10{margin-left:10px}/*距左10像素*/
+.margin-l-15{margin-left:15px}/*距左15像素*/
+.margin-l-20{margin-left:20px}/*距左20像素*/
+.margin-l-25{margin-left:25px}/*距左25像素*/
+.margin-l-30{margin-left:30px}/*距左30像素*/
+.margin-l-35{margin-left:35px}/*距左35像素*/
+.margin-l-40{margin-left:40px}/*距左40像素*/
+.margin-l-45{margin-left:45px}/*距左45像素*/
+.margin-l-50{margin-left:50px}/*距左50像素*/
+ 
+.margin-r-5{margin-right:5px}/*距右5像素*/
+.margin-r-10{margin-right:10px}/*距右10像素*/
+.margin-r-15{margin-right:15px}/*距右15像素*/
+.margin-r-20{margin-right:20px}/*距右20像素*/
+.margin-r-25{margin-right:25px}/*距右25像素*/
+.margin-r-30{margin-right:30px}/*距右30像素*/
+.margin-r-35{margin-right:35px}/*距右35像素*/
+.margin-r-40{margin-right:40px}/*距右40像素*/
+.margin-r-45{margin-right:45px}/*距右45像素*/
+.margin-r-50{margin-right:50px}/*距右50像素*/
+
+.margin-5{margin:5px}/*距四周5像素*/
+.margin-10{margin:10px}/*距四周10像素*/
+.margin-15{margin:15px}/*距四周15像素*/
+.margin-20{margin:20px}/*距四周20像素*/
+.margin-25{margin:25px}/*距四周25像素*/
+.margin-30{margin:30px}/*距四周30像素*/
+.margin-35{margin:35px}/*距四周35像素*/
+.margin-40{margin:40px}/*距四周40像素*/
+.margin-45{margin:45px}/*距四周45像素*/
+.margin-50{margin:50px}/*距四周50像素*/
+</pre>
+			<h2>8.内填充</h2></p>
+			<div>.padding-t-*表示上填充，.padding-b-*表示下填充，.padding-l-*表示左填充，.padding-r-*表示右填充</br>
+				支持任何块级元素，如果行内元素要想使用padding，请使用<mark> display：block</mark> 先将其转化为块级元素
+			</div>
+			<pre class="lemonui-code" linenums="true">
+.padding-t-5{padding-top:5px}/*上填充5像素*/
+.padding-t-10{padding-top:10px}/*上填充10像素*/
+.padding-t-15{padding-top:15px}/*上填充15像素*/
+.padding-t-20{padding-top:20px}/*上填充20像素*/
+.padding-t-25{padding-top:25px}/*上填充25像素*/
+.padding-t-30{padding-top:30px}/*上填充30像素*/
+ 
+.padding-b-5{padding-bottom:5px}/*下填充5像素*/
+.padding-b-10{padding-bottom:10px}/*下填充10像素*/
+.padding-b-15{padding-bottom:15px}/*下填充15像素*/
+.padding-b-20{padding-bottom:20px}/*下填充20像素*/
+.padding-b-25{padding-bottom:20px}/*下填充25像素*/
+.padding-b-30{padding-bottom:30px}/*下填充30像素*/
+
+.padding-l-5{padding-left:5px}/*左填充5像素*/
+.padding-l-10{padding-left:10px}/*左填充10像素*/
+.padding-l-15{padding-left:15px}/*左填充15像素*/
+.padding-l-20{padding-left:20px}/*左填充20像素*/
+.padding-l-25{padding-left:25px}/*左填充25像素*/
+.padding-l-30{padding-left:20px}/*左填充30像素*/
+ 
+.padding-r-5{padding-right:5px}/*右填充5像素*/
+.padding-r-10{padding-right:10px}/*右填充10像素*/
+.padding-r-15{padding-right:15px}/*右填充15像素*/
+.padding-r-20{padding-right:20px}/*右填充20像素*/
+.padding-r-25{padding-right:20px}/*右填充25像素*/
+.padding-r-30{padding-right:30px}/*右填充30像素*/
+ 
+.padding-5{padding:5px}/*填充5像素*/
+.padding-10{padding:10px}/*填充10像素*/
+.padding-15{padding:15px}/*填充15像素*/
+.padding-20{padding:20px}/*填充20像素*/
+.padding-25{padding:25px}/*填充25像素*/
+.padding-30{padding:20px}/*填充30像素*/
+</pre>
+			<h2>9.分割线</h2> 直接书写
+			<code>&lt;hr&gt;</code>属性
+			<hr>
+			</p>
+
+			<h2>10.线条</h2></p>
+			<div class="code-example">
+				<div class="line"></div>
+			</div>
+			<pre class="lemonui-code" linenums="true">
+ <div class="line"></div>
+</pre>
+
+			<h2>11.字段集</h2>
+			<div>直接书写就可以使用样式</div>
+			<fieldset>
+				<legend>字段集区块 - 默认风格</legend>
+				<div>这里面是内容。<br/> 这里面是内容。
+				</div>
+			</fieldset><br /><br /><br />
+
+		</div>
+
+	</body>

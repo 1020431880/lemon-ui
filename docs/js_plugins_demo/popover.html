@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+		<title>Lemon-ui示例》Js插件》弹出提示框</title>
+		<link rel="stylesheet" href="../css/index.css" />
+		<!--引入lemon-ui的css -->
+		<link rel="stylesheet" href="../../dist/css/lemon-ui.css" />
+		<!--引用jquery -->
+		<script type="text/javascript" src="../../lib/jquery/jquery.min.js"></script>
+		<!--引入lemon-ui的js -->
+		<script type="text/javascript" src="../../dist/js/lemon-ui.js"></script>
+		<!--引入谷歌的prettify代码高亮插件 -->
+		<script type="text/javascript" src="../../lib/prettify/prettify.js"></script>
+		<!--[if lt IE 9]>
+        <script type="text/javascript" src="../../lib/html5.js"></script>
+		<script type="text/javascript" src="../../lib/respond.min.js"></script>
+		<script type="text/javascript" src="../../lib/PIE_IE678.js"></script>
+        <![endif]-->
+	</head>
+
+	<body>
+		<!--顶部内容-->
+		<div class="content-navbar">
+			<span class="breadcrumb">
+				<a href="javascript:void(0);" class="first"><i class="le le-shouye font-13" style="color:#333;"></i>首页</a>
+				<a href="javascript:void(0);" class="second">Js插件</a>
+				<a href="javascript:void(0);" class="third">Js插件</a>
+				<a class="fourth current">弹出提示框</a>
+			</span>
+		</div>
+		<!--页面主要内容-->
+		<div class="main-content-demo">
+
+			<h1>弹出提示框</h1>
+			<hr>
+
+			<h2>1. 基本样式</h2>
+			<div>弹出提示框插件</div>
+			<div class="code-example">
+				基本样式：</br>
+				<div class='popover popover-default left' style="position: relative;display:inline-block;">
+					<div class="content">this is content！this is content！this is content！this is content！this is content！</div>
+					<div class="arrow"></div>
+				</div>
+				</p>
+				带标题样式：</br>
+				<div class='popover popover-default left' style="position: relative;display:inline-block;">
+					<div class="title">title</div>
+					<div class="content">this is content！this is content！this is content！this is content！this is content！</div>
+					<div class="arrow"></div>
+				</div>
+				<div class='popover popover-default top' style="position: relative;display:inline-block;">
+					<div class="title">title</div>
+					<div class="content">this is content！this is content！this is content！this is content！this is content！</div>
+					<div class="arrow"></div>
+				</div>
+
+				<div class='popover popover-default bottom' style="position: relative;display:inline-block;">
+					<div class="title">title</div>
+					<div class="content">this is content！this is content！this is content！this is content！this is content！</div>
+					<div class="arrow"></div>
+				</div>
+				<div class='popover popover-default right' style="position: relative;display:inline-block;">
+					<div class="title">title</div>
+					<div class="content">this is content！this is content！this is content！this is content！this is content！</div>
+					<div class="arrow"></div>
+				</div>
+			</div>
+
+			<h2>2. 主题效果及应用</h2>
+			<div>popover提供了多种样式颜色供使用，下面是展示的样例，popover的配置都是在<code>data-popover="{}"</code>中写的，主题有popover-default,popover-primary,
+			popover-info,popover-success,popover-danger, 默认是popover-default，配置中各个属性的值因为是字符串类型，所以都需要加上引号</div>
+			<div class="code-example" align="center">
+				<input type="button" class="btn btn-default" data-toggle="popover" data-popover="{placement:'top', theme:'popover-default', title:'标题', content:'青春是一首优美的旋律，青春是一首安静的诗歌'}" value="Default" />
+				<input type="button" class="btn btn-primary" data-toggle="popover" data-popover="{placement:'top', theme:'popover-primary', title:'标题', content:'青春是一首优美的旋律，青春是一首安静的诗歌'}" value="Primary" />
+				<input type="button" class="btn btn-info" data-toggle="popover" data-popover="{placement:'top', theme:'popover-info', title:'标题', content:'青春是一首优美的旋律，青春是一首安静的诗歌'}" value="Info" />
+				<input type="button" class="btn btn-success" data-toggle="popover" data-popover="{placement:'top', theme:'popover-success', title:'标题', content:'青春是一首优美的旋律，青春是一首安静的诗歌'}" value="Success" />
+				<input type="button" class="btn btn-warning" data-toggle="popover" data-popover="{placement:'top', theme:'popover-warning', title:'标题', content:'青春是一首优美的旋律，青春是一首安静的诗歌'}" value="Warining" />
+				<input type="button" class="btn btn-danger" data-toggle="popover" data-popover="{placement:'top', theme:'popover-danger', title:'标题', content:'青春是一首优美的旋律，青春是一首安静的诗歌'}" value="Danger" />
+			</div>
+
+			<h2>3.1 代码</h2>
+			<pre class="lemonui-code" linenums="true">
+<input type="button" class="btn btn-default" data-toggle="popover" data-popover="{placement:'top', theme:'popover-default', title:'标题', content:'青春是一首优美的旋律，青春是一首安静的诗歌'}" value="Default" />
+<input type="button" class="btn btn-primary" data-toggle="popover" data-popover="{placement:'top', theme:'popover-primary', title:'标题', content:'青春是一首优美的旋律，青春是一首安静的诗歌'}" value="Primary" />
+<input type="button" class="btn btn-info" data-toggle="popover" data-popover="{placement:'top', theme:'popover-info', title:'标题', content:'青春是一首优美的旋律，青春是一首安静的诗歌'}" value="Info" />
+<input type="button" class="btn btn-success" data-toggle="popover" data-popover="{placement:'top', theme:'popover-success', title:'标题', content:'青春是一首优美的旋律，青春是一首安静的诗歌'}" value="Success" />
+<input type="button" class="btn btn-warning" data-toggle="popover" data-popover="{placement:'top', theme:'popover-warning', title:'标题', content:'青春是一首优美的旋律，青春是一首安静的诗歌'}" value="Warining" />
+<input type="button" class="btn btn-danger" data-toggle="popover" data-popover="{placement:'top', theme:'popover-danger', title:'标题', content:'青春是一首优美的旋律，青春是一首安静的诗歌'}" value="Danger" /></pre>
+			<!-- 文档结束-->
+		</div>
+	</body>

@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+		<title>Lemon-ui示例》主页面</title>
+
+		<link rel="stylesheet" href="../docs/css/index.css" />
+		<!--引入lemon-ui的css -->
+		<link rel="stylesheet" href="../dist/css/lemon-ui.css" />
+		<!--引用jquery -->
+		<script type="text/javascript" src="../lib/jquery/jquery.min.js"></script>
+		<script type="text/javascript" src="js/index.js"></script>
+		<!--[if lt IE 9]>
+        <script type="text/javascript" src="../lib/html5.js"></script>
+		<script type="text/javascript" src="../lib/respond.min.js"></script>
+		<script type="text/javascript" src="../lib/PIE_IE678.js"></script>
+        <![endif]-->
+	</head>
+
+	<body>
+
+		<div class="lemonui-body">
+
+			<!--顶部-->
+			<div class="lemonui-header">
+				<div class="header-logo" align="center"><i class="le le-lemon-o font-18"></i> lemonUI</div>
+				<div class="header-navbar">
+					<div class="navbar-menu">
+						<ul>
+							<li class="menu-li">
+								<a href="http://www.qq.com" onClick="controlMenu(0);" target="content">开始使用</a>
+							</li>
+							<li class="menu-li">
+								<a href="javascript:void(0);" onClick="controlMenu(1);">CSS</a>
+							</li>
+							<li class="menu-li">
+								<a href="javascript:void(0);" onClick="controlMenu(2);">Web 组件</a>
+							</li>
+							<li class="menu-li">
+								<a href="javascript:void(0);" onClick="controlMenu(3);">Js 插件</a>
+							</li>
+							<li class="menu-li">
+								<a href="http://www.qq.com" onClick="controlMenu(4);" target="content">社区</a>
+							</li>
+						</ul>
+					</div>
+				</div>
+				<div class="menu-slider"><i class="le le-menu font-20"></i></div>
+			</div>
+
+			<!-- 主页面 -->
+			<div class="lemonui-main">
+				<!--菜单-->
+				<div class="main-menu">
+					<!--CSS模块 -->
+					<div class="menu-css-module menu-module">
+						<div class="module-name">HTML 元素</div>
+						<ul>
+							<li>
+								<a href="css_demo/typography.html" target="content">排版<span>Typography</span></a>
+							</li>
+							<li>
+								<a href="css_demo/button.html" target="content">按钮<span>Button</span></a>
+							</li>
+							<li>
+								<a href="css_demo/code.html" target="content">代码<span>Code</span></a>
+							</li>
+							<li>
+								<a href="css_demo/table.html" target="content">表格<span>Table</span></a>
+							</li>
+							<li>
+								<a href="css_demo/form.html" target="content">表单<span>Form</span></a>
+							</li>
+							<li>
+								<a href="css_demo/color.html" target="content">颜色<span>Color</span></a>
+							</li>
+							<li>
+								<a href="css_demo/image.html" target="content">图片<span>Image</span></a>
+							</li>
+						</ul>
+					</div>
+					<div class="menu-web-module menu-module" style="display:none;">
+						<div class="module-name">布局类组件</div>
+						<ul>
+							<li>
+								<a href="web_demo/grid-system.html" target="content">格栅系统<span>Grid-system</span></a>
+							</li>
+							<li>
+								<a href="web_demo/block.html" target="content">块<span>Block</span></a>
+							</li>
+							<li>
+								<a href="web_demo/panel.html" target="content">面板<span>Panel</span></a>
+							</li>
+
+						</ul>
+						<div class="module-name">导航类组件</div>
+						<ul>
+							<li>
+								<a href="web_demo/navigation.html" target="content">导航菜单<span>navigation</span></a>
+							</li>
+							<li>
+								<a href="web_demo/breadcrumb.html" target="content">面包屑<span>breadcrumb</span></a>
+							</li>
+							<li>
+								<a href="web_demo/tabs.html" target="content">选项卡<span>Tabs</span></a>
+							</li>
+							<li>
+								<a href="web_demo/pagination.html" target="content">分页<span>Pagination</span></a>
+							</li>
+							<li>
+								<a href="web_demo/picture-slider.html" target="content">图片轮播<span>Picture-slider</span></a>
+							</li>
+
+						</ul>
+						<div class="module-name">页面元素类组件</div>
+						<ul>
+							<li>
+								<a href="web_demo/iconfont.html" target="content">字体图标<span>Font-icon</span></a>
+							</li>
+							<li>
+								<a href="web_demo/button-group.html" target="content">按钮组<span>Button-group</span></a>
+							</li>
+							<li>
+								<a href="web_demo/button-dropdown.html" target="content">按钮下拉菜单<span>Button-dropdown</span></a>
+							</li>
+							<li>
+								<a href="web_demo/input-group.html" target="content">输入框组<span>Input-group</span></a>
+							</li>
+
+							<li>
+								<a href="web_demo/label-badge.html" target="content">标签与标号<span>Label-badge</span></a>
+							</li>
+							<li>
+								<a href="web_demo/list.html" target="content">列表<span>List</span></a>
+							</li>
+							<li>
+								<a href="web_demo/accordion.html" target="content">折叠<span>Accordion</span></a>
+							</li>
+							<li>
+								<a href="web_demo/footer.html" target="content">页脚<span>Footer</span></a>
+							</li>
+							<li>
+								<a href="web_demo/prompt-bar.html" target="content">提示条<span>Prompt-bar</span></a>
+							</li>
+							<li>
+								<a href="web_demo/progress-bar.html" target="content">进度条<span>Progress-bar</span></a>
+							</li>
+							<li>
+								<a href="web_demo/back-top.html" target="content">返回顶部<span>Backtop</span></a>
+							</li>
+							<li>
+								<a href="web_demo/searchbox.html" target="content">搜索框<span>Searchbox</span></a>
+							</li>
+							<li>
+								<a href="web_demo/tooltip.html" target="content">工具提示<span>Tooltip</span></a>
+							</li>
+							<li>
+								<a href="web_demo/animation.html" target="content">CSS3 动画<span>Animation</span></a>
+							</li>
+						</ul>
+						<div style="height:50px;"></div>
+					</div>
+					<div class="menu-js-module menu-module" style="display:none;">
+						<div class="module-name">JS 插件</div>
+						<ul>
+							<li>
+								<a href="js_plugins_demo/scroll-bar.html" target="content">滚动条<span>Scroll-bar</span></a>
+							</li>
+							<li>
+								<a href="js_plugins_demo/slider-bar.html" target="content">拖动条<span>Slider-bar</span></a>
+							</li>
+							<li>
+								<a href="js_plugins_demo/popover.html" target="content">提示框<span>Popover</span></a>
+							</li>
+							<li>
+								<a href="js_plugins_demo/dialogbox.html" target="content">消息对话框<span>Dialogbox</span></a>
+							</li>
+							<li>
+								<a href="js_plugins_demo/modal.html" target="content">模态窗口<span>Modal</span></a>
+							</li>
+							<li>
+								<a href="js_plugins_demo/datepicker.html" target="content">日期选择器<span>Datepicker</span></a>
+							</li>
+							<li>
+								<a href="js_plugins_demo/scroll-listener.html" target="content">滚动监听<span>Scroll-listener</span></a>
+							</li>
+							<li>
+								<a href="js_plugins_demo/encharts.html" target="content">报表插件<span>Encharts</span></a>
+							</li>
+							<li>
+								<a href="js_plugins_demo/photo-plugins.html" target="content">相册插件<span>Photo-plugins</span></a>
+							</li>
+							<li>
+								<a href="js_plugins_demo/ztree.html" target="content">树形菜单<span>Ztree</span></a>
+							</li>
+							<li>
+								<a href="js_plugins_demo/picture-zoom.html" target="content">图片放大<span>Picture-zoom</span></a>
+							</li>
+							<li>
+								<a href="js_plugins_demo/jquery-validate.html" target="content">表单验证<span>Jquery-validate</span></a>
+							</li>
+							<li>
+								<a href="js_plugins_demo/email-complete.html" target="content">邮箱自动提示<span>Email-complete</span></a>
+							</li>
+							<li>
+								<a href="js_plugins_demo/search-complete.html" target="content">搜索自动补全<span>Search-complete</span></a>
+							</li>
+						</ul>
+					</div>
+
+				</div>
+				<div class="main-content">
+					<iframe id="content" name="content" style="width:100%;padding:0px; border:0px; display: block; margin:0px; height:100%; " src="http://www.qq.com"></iframe>
+				</div>
+
+			</div>
+
+		</div>
+	</body>
+
+</html>

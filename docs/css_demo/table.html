@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+		<title>Lemon-ui示例》CSS》HTML元素》表格</title>
+		<link rel="stylesheet" href="../css/index.css" />
+		<!--引入lemon-ui的css -->
+		<link rel="stylesheet" href="../../dist/css/lemon-ui.css" />
+		<!--引用jquery -->
+		<script type="text/javascript" src="../../lib/jquery/jquery.min.js"></script>
+		<!--引入lemon-ui的js -->
+		<script type="text/javascript" src="../../dist/js/lemon-ui.js"></script>
+		<!--引入谷歌的prettify代码高亮插件 -->
+		<script type="text/javascript" src="../../lib/prettify/prettify.js"></script>
+		<!--[if lt IE 9]>
+        <script type="text/javascript" src="../../lib/html5.js"></script>
+		<script type="text/javascript" src="../../lib/respond.min.js"></script>
+		<script type="text/javascript" src="../../lib/PIE_IE678.js"></script>
+        <![endif]-->
+	</head>
+
+	<body>
+		<!--顶部内容-->
+		<div class="content-navbar">
+			<span class="breadcrumb">
+				<a href="javascript:void(0);" class="first"><i class="le le-shouye font-13" style="color:#333;"></i>首页</a>
+				<a href="javascript:void(0);" class="second">CSS</a>
+				<a href="javascript:void(0);" class="third">HTML元素</a>
+				<a class="fourth current">表格</a>
+			</span>
+		</div>
+		<!--页面主要内容-->
+		<div class="main-content-demo">
+
+			<h1>表格</h1>
+			<hr>
+			<h2>1.系统默认表格</h2>
+			<div class="code-example">
+				<table style="width:100%;">
+					<tr>
+						<th>表头1</th>
+						<th>表头2</th>
+						<th>表头3</th>
+					</tr>
+					<tr>
+						<td>内容1</td>
+						<td>内容2</td>
+						<td>内容3</td>
+					</tr>
+					<tr>
+						<td>内容1</td>
+						<td>内容2</td>
+						<td>内容3</td>
+					</tr>
+				</table>
+			</div>
+			<h3>1.1代码</h3>
+			<pre class="lemonui-code" linenums="true">
+&lt;table&gt;
+  ...
+&lt;/table&gt;
+</pre>
+
+			<h2>2.默认样式 .table</h2>
+			<div class="code-example">
+				<table style="width:100%;" class="table">
+					<tr>
+						<th>表头1</th>
+						<th>表头2</th>
+						<th>表头3</th>
+					</tr>
+					<tr>
+						<td>内容1</td>
+						<td>内容2</td>
+						<td>内容3</td>
+					</tr>
+					<tr>
+						<td>内容1</td>
+						<td>内容2</td>
+						<td>内容3</td>
+					</tr>
+				</table>
+			</div>
+			<h3>2.1代码</h3>
+			<pre class="lemonui-code" linenums="true">
+&lt;table class="table"&gt;
+  ...
+&lt;/table&gt;
+</pre>
+			<h2>3.添加水平线样式 .table-border</h2>
+			<div class="code-example">
+				<table style="width:100%;" class="table table-border">
+					<tr>
+						<th>表头1</th>
+						<th>表头2</th>
+						<th>表头3</th>
+					</tr>
+					<tr>
+						<td>内容1</td>
+						<td>内容2</td>
+						<td>内容3</td>
+					</tr>
+					<tr>
+						<td>内容1</td>
+						<td>内容2</td>
+						<td>内容3</td>
+					</tr>
+				</table>
+			</div>
+			<h3>3.1代码</h3>
+			<pre class="lemonui-code" linenums="true">
+&lt;table class="table table-border"&gt;
+  ...
+&lt;/table&gt;
+</pre>
+
+			<h2>3.添加表头背景 .table-hd-bg</h2>
+			<div class="code-example">
+				<table style="width:100%;" class="table table-border table-hd-bg">
+					<tr>
+						<th>表头1</th>
+						<th>表头2</th>
+						<th>表头3</th>
+					</tr>
+					<tr>
+						<td>内容1</td>
+						<td>内容2</td>
+						<td>内容3</td>
+					</tr>
+					<tr>
+						<td>内容1</td>
+						<td>内容2</td>
+						<td>内容3</td>
+					</tr>
+				</table>
+			</div>
+			<h3>3.1代码</h3>
+			<pre class="lemonui-code" linenums="true">
+&lt;table class="table table-border table-hd-bg"&gt;
+  ...
+&lt;/table&gt;
+</pre>
+
+			<h2>4.表格四周边框 .table-bordered</h2>
+			<div class="code-example">
+				<table style="width:100%;" class="table table-border table-hd-bg table-bordered">
+					<tr>
+						<th>表头1</th>
+						<th>表头2</th>
+						<th>表头3</th>
+					</tr>
+					<tr>
+						<td>内容1</td>
+						<td>内容2</td>
+						<td>内容3</td>
+					</tr>
+					<tr>
+						<td>内容1</td>
+						<td>内容2</td>
+						<td>内容3</td>
+					</tr>
+				</table>
+			</div>
+			<h3>4.1代码</h3>
+			<pre class="lemonui-code" linenums="true">
+&lt;table class="table table-border table-hd-bg table-bordered"&gt;
+  ...
+&lt;/table&gt;
+</pre>
+			<h2>5.紧缩表格.table-condensed</h2>
+			<div class="code-example">
+				<table style="width:100%;" class="table table-border table-hd-bg table-bordered table-condensed">
+					<tr>
+						<th>表头1</th>
+						<th>表头2</th>
+						<th>表头3</th>
+					</tr>
+					<tr>
+						<td>内容1</td>
+						<td>内容2</td>
+						<td>内容3</td>
+					</tr>
+					<tr>
+						<td>内容1</td>
+						<td>内容2</td>
+						<td>内容3</td>
+					</tr>
+				</table>
+			</div>
+			<h3>5.1代码</h3>
+			<pre class="lemonui-code" linenums="true">
+&lt;table class="table table-border table-hd-bg table-bordered table-condensed"&gt;
+  ...
+&lt;/table&gt;
+</pre>
+
+			<h2>6.奇偶行背景 .table-striped </h2>
+			<div class="code-example">
+				<table style="width:100%;" class="table table-border table-hd-bg table-bordered table-striped ">
+					<tr>
+						<th>表头1</th>
+						<th>表头2</th>
+						<th>表头3</th>
+					</tr>
+					<tr>
+						<td>内容1</td>
+						<td>内容2</td>
+						<td>内容3</td>
+					</tr>
+					<tr>
+						<td>内容1</td>
+						<td>内容2</td>
+						<td>内容3</td>
+					</tr>
+				</table>
+			</div>
+			<h3>6.1代码</h3>
+			<pre class="lemonui-code" linenums="true">
+&lt;table class="table table-border table-hd-bg table-bordered table-striped"&gt;
+  ...
+&lt;/table&gt;
+</pre>
+			<h2>7.鼠标悬停样式 .table-hover </h2>
+			<div class="code-example">
+				<table style="width:100%;" class="table table-border table-hd-bg table-bordered table-striped table-hover">
+					<tr>
+						<th>表头1</th>
+						<th>表头2</th>
+						<th>表头3</th>
+					</tr>
+					<tr>
+						<td>内容1</td>
+						<td>内容2</td>
+						<td>内容3</td>
+					</tr>
+					<tr>
+						<td>内容1</td>
+						<td>内容2</td>
+						<td>内容3</td>
+					</tr>
+				</table>
+			</div>
+			<h3>7.1代码</h3>
+			<pre class="lemonui-code" linenums="true">
+&lt;table class="table table-border table-hd-bg table-bordered table-striped table-hover"&gt;
+  ...
+&lt;/table&gt;
+</pre>
+		</div>
+	</body>

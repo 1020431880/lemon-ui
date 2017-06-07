@@ -1,0 +1,49 @@
+/* ledate整体样式 */
+.ledate{border: solid 1px #ccc;cursor:default;font-size: 13px;width: 230px; color: #333; position: absolute; background-color: #FFFFFF; -webkit-border-radius: 3px; border-radius: 3px; -moz-box-shadow: 0 0 1px #ddd;-webkit-box-shadow: 0 0 1px #ddd; box-shadow: 0 0 1px #ddd;}
+
+/* 公用鼠标滑过的样式*/
+.ledate_common_hover:hover{ background-color:#F17C88; color:#fff; cursor:pointer; border-radius:2px;}
+/* 公用当前选中的样式 */
+.ledate_common_current{background-color: #DA4453; border-radius: 2px; color: #fff;cursor:pointer;}
+/* 公用不可点击的样式 */
+.ledate_common_noclick{color:#999999;cursor:pointer;}
+
+/*日期顶部工具条样式*/
+.ledate table thead th{font-weight:500;font-size:13.5px;line-height:40px;height:40px;background:#DA4453; cursor:pointer; color:#fff;text-align:center;}
+.ledate table thead th:hover{ background:#F17C88;}
+
+/*周的样式*/
+.ledate_week ul{list-style:none;padding:0px;margin:0px;width:100%;}
+.ledate_week ul li{float:left;color:#333;height:25px;width:14.29%;width:14.28%\9;width:14.28%\0;line-height:25px;text-align:center;border-bottom:solid 1px #ccc;}
+
+/** 日期的样式*/
+.ledate_date ul{list-style:none;padding:0px;margin:0px;width:100%;}
+.ledate_date ul li{float:left;height:29px;width:14.29%;line-height:29px;width:14.28%\9;width:14.28%\0;text-align:center;}
+
+/**年份的样式*/
+.ledate_main_year{list-style:none;margin:0px;padding:0px;}
+.ledate_main_year li{float:left;height:40px;line-height:40px;width:20%;text-align:center;}
+
+/**月份的样式*/
+.ledate_main_month{list-style:none;margin:0px;padding:0px;}
+.ledate_main_month li{float:left;height:50px;line-height:50px;width:33.27%;text-align:center;}
+
+/* 底部时分秒工具条样式*/
+.ledate_end{height:35px; line-height:35px; border-top:solid 1px #ccc;font-weight:500;font-size:13px;}
+
+/* 时间视图时分秒的样式和按钮样式*/
+.ledate_time_box{ height:23px;width:28px;text-align:center;line-height:23px; font-size:12px; outline:none;  color:#333;border: 1px #ddd solid;border-radius:2px;}
+.ledate_time_button{ height:25px;height:27px\9;width:40px;text-align:center;line-height:23px;line-height:18px\9;outline:none;background:#DA4453;border:none;color:#fff;border-radius:2px;margin-left:2px;margin-right:2px;}
+.ledate_time_button:hover{background:#F17C88;}
+
+/** 小时视图样式*/
+.ledate_time_hours{list-style:none;margin:0px;padding:0px;}
+.ledate_time_hours li{float:left;height:29px;line-height:29px;width:25%;text-align:center;}
+
+/** 分钟视图样式*/
+.ledate_time_minutes{list-style:none;margin:0px;padding:0px;}
+.ledate_time_minutes li{float:left;height:29px;line-height:29px;width:10%;text-align:center;}
+
+/** 秒数视图样式*/
+.ledate_time_seconds{list-style:none;margin:0px;padding:0px;}
+.ledate_time_seconds li{float:left;height:29px;line-height:29px;width:10%;text-align:center;}

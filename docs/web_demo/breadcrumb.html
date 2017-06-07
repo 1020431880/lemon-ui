@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+		<title>Lemon-ui示例》Web组件》导航类组件》面包屑导航</title>
+		<link rel="stylesheet" href="../css/index.css" />
+		<!--引入lemon-ui的css -->
+		<link rel="stylesheet" href="../../dist/css/lemon-ui.css" />
+		<!--引用jquery -->
+		<script type="text/javascript" src="../../lib/jquery/jquery.min.js"></script>
+		<!--引入lemon-ui的js -->
+		<script type="text/javascript" src="../../dist/js/lemon-ui.js"></script>
+		<!--引入谷歌的prettify代码高亮插件 -->
+		<script type="text/javascript" src="../../lib/prettify/prettify.js"></script>
+		<!--[if lt IE 9]>
+        <script type="text/javascript" src="../../lib/html5.js"></script>
+		<script type="text/javascript" src="../../lib/respond.min.js"></script>
+		<script type="text/javascript" src="../../lib/PIE_IE678.js"></script>
+        <![endif]-->
+	</head>
+
+	<body>
+		<!--顶部内容-->
+		<div class="content-navbar">
+			<span class="breadcrumb">
+				<a href="javascript:void(0);" class="first"><i class="le le-shouye font-13" style="color:#333;"></i>首页</a>
+				<a href="javascript:void(0);" class="second">Web组件</a>
+				<a href="javascript:void(0);" class="third">导航类组件</a>
+				<a class="fourth current">面包屑</a>
+			</span>
+		</div>
+		<!--页面主要内容-->
+		<div class="main-content-demo">
+
+			<h1>面包屑</h1>
+			<hr>
+			<div class="code-example">
+				<span class="breadcrumb">
+					<a href="">首页</a>
+					<a href="">国际新闻</a>
+					<a href="">国内新闻</a>
+					<a class="current">小浪底水库</a>
+				</span>
+			</div>
+			<h2>代码</h2>
+			<div>需要引用<code>.breadcrumb</code>来使用面包屑导航，<code>.current</code>可以设置当前导航所在的位置</div>
+			<pre class="lemonui-code" linenums="true">
+<span class="breadcrumb">
+  <a href="">首页</a>
+  <a href="">国际新闻</a>
+  <a href="">国内新闻</a>
+  <a class="current">小浪底水库</a>
+</span>
+</pre>
+			<div>你还可以设置<code>separator="-"</code>属性来实现不同的分隔符</div>
+			<div class="code-example">
+				<span class="breadcrumb" separator="-">
+					<a href="">首页</a>
+					<a href="">国际新闻</a>
+					<a href="">国内新闻</a>
+					<a class="current">小浪底水库</a>
+				</span>
+			</div>
+			<div>另外还可以当作导航用，比如常见的新闻标题的导航，仅仅需要设置一下<code>separator="|"</code>就可以了，很简单</div>
+			<div class="code-example">
+				<span class="breadcrumb" separator="|">
+					<a href="">娱乐</a>
+					<a href="">八卦</a>
+					<a href="">体育</a>
+					<a href="">NBA</a>
+					<a href="">搞笑</a>
+					<a href="">视频</a>
+					<a href="">图片</a>
+					<a href="">游戏</a>
+					<a href="">综艺节目</a>
+				</span>
+			</div>
+			<pre class="lemonui-code" linenums="true" separator="|">
+<span class="breadcrumb">
+  <a href="">娱乐</a>
+  <a href="">八卦</a>
+  <a href="">体育</a>
+  <a href="">NBA</a>
+  <a href="">搞笑</a>
+  <a href="">视频</a>
+  <a href="">图片</a>
+  <a href="">游戏</a>
+  <a href="">综艺节目</a>
+</span>
+</pre>
+			<!-- 文档结束-->
+		</div>
+	</body>

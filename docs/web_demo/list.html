@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+		<title>Lemon-ui示例》Web组件》页面元素类组件》列表</title>
+		<link rel="stylesheet" href="../css/index.css" />
+		<!--引入lemon-ui的css -->
+		<link rel="stylesheet" href="../../dist/css/lemon-ui.css" />
+		<!--引用jquery -->
+		<script type="text/javascript" src="../../lib/jquery/jquery.min.js"></script>
+		<!--引入lemon-ui的js -->
+		<script type="text/javascript" src="../../dist/js/lemon-ui.js"></script>
+		<!--引入谷歌的prettify代码高亮插件 -->
+		<script type="text/javascript" src="../../lib/prettify/prettify.js"></script>
+		<!--[if lt IE 9]>
+        <script type="text/javascript" src="../../lib/html5.js"></script>
+		<script type="text/javascript" src="../../lib/respond.min.js"></script>
+		<script type="text/javascript" src="../../lib/PIE_IE678.js"></script>
+        <![endif]-->
+	</head>
+
+	<body>
+		<!--顶部内容-->
+		<div class="content-navbar">
+			<span class="breadcrumb">
+				<a href="javascript:void(0);" class="first"><i class="le le-shouye font-13" style="color:#333;"></i>首页</a>
+				<a href="javascript:void(0);" class="second">Web组件</a>
+				<a href="javascript:void(0);" class="third">页面元素类组件</a>
+				<a class="fourth current">列表</a>
+			</span>
+		</div>
+		<!--页面主要内容-->
+		<div class="main-content-demo">
+
+			<h1>列表</h1>
+			<hr>
+
+			<h2>1. 基本列表样式</h2>
+			<h3>1.1 基本列表</h3>
+			<div>基本列表包括纯文字列表和链接文字列表</div>
+			<div class="code-example">
+				纯文字列表：
+				<ul class="list">
+					<li>每个人都有一个死角， 自己走不出来，别人也闯不进去。</li>
+					<li>我把最深沉的秘密放在那里。</li>
+					<li>你不懂我，我不怪你。</li>
+				</ul>
+				链接文字列表：
+				<ul class="list">
+					<li>
+						<a href="#">每个人都有一个死角， 自己走不出来，别人也闯不进去。</a>
+					</li>
+					<li>
+						<a href="#">我把最深沉的秘密放在那里。</a>
+					</li>
+					<li>
+						<a href="#">你不懂我，我不怪你。</a>
+					</li>
+				</ul>
+			</div>
+			<h2>1.1.1 代码</h2>
+			<pre class="lemonui-code" linenums="true">
+纯文字列表：
+<ul class="list">
+  <li>...</li>
+</ul>
+
+链接文字列表：
+<ul class="list">
+  <li><a href="#">...</a></li>
+</ul>
+</pre>
+
+			<h2>1.2. 列表文字超出截断</h2>
+			<div>超出的列表文字截断，多余的展示为[...]</div>
+			<div class="code-example">
+				纯文字列表超出：
+				<ul class="list">
+					<li>每个人都有一个死角， 自己走不出来，别人也闯不进去。我把最深沉的秘密放在那里。你不懂我，我不怪你。每个人都有一个死角， 自己走不出来，别人也闯不进去。我把最深沉的秘密放在那里。你不懂我，我不怪你。</li>
+				</ul>
+				链接文字列表超出：
+				<ul class="list">
+					<li>
+						<a href="#">每个人都有一个死角， 自己走不出来，别人也闯不进去。我把最深沉的秘密放在那里。你不懂我，我不怪你。每个人都有一个死角， 自己走不出来，别人也闯不进去。我把最深沉的秘密放在那里。你不懂我，我不怪你。</a>
+					</li>
+				</ul>
+			</div>
+			<h2>1.2.1 代码</h2>
+			<pre class="lemonui-code" linenums="true">
+纯文字列表：
+<ul class="list">
+  <li>...</li>
+</ul>
+
+链接文字列表：
+<ul class="list">
+  <li><a href="#">...</a></li>
+</ul>
+</pre>
+
+			<h2>2. 样式变换</h2>
+			<h3>2.1 列表边框</h3>
+			<div>添加列表的四周边框</div>
+			<div class="code-example">
+				纯文字列表：
+				<ul class="list list-border">
+					<li>每个人都有一个死角， 自己走不出来，别人也闯不进去。</li>
+					<li>我把最深沉的秘密放在那里。</li>
+					<li>你不懂我，我不怪你。</li>
+				</ul>
+				链接文字列表：
+				<ul class="list list-border">
+					<li>
+						<a href="#">每个人都有一个死角， 自己走不出来，别人也闯不进去。</a>
+					</li>
+					<li>
+						<a href="#">我把最深沉的秘密放在那里。</a>
+					</li>
+					<li>
+						<a href="#">你不懂我，我不怪你。</a>
+					</li>
+				</ul>
+			</div>
+			<h2>2.1.1 代码</h2>
+			<pre class="lemonui-code" linenums="true">
+纯文字列表：
+<ul class="list list-border">
+  <li>...</li>
+</ul>
+
+链接文字列表：
+<ul class="list list-border">
+  <li><a href="#">...</a></li>
+</ul>
+</pre>
+
+			<h3>2.2 列表斑马线</h3>
+			<div>列表添加奇偶行的背景色</div>
+			<div class="code-example">
+				纯文字列表：
+				<ul class="list list-border list-striped">
+					<li>每个人都有一个死角， 自己走不出来，别人也闯不进去。</li>
+					<li>我把最深沉的秘密放在那里。</li>
+					<li>你不懂我，我不怪你。</li>
+				</ul>
+				链接文字列表：
+				<ul class="list list-border list-striped">
+					<li>
+						<a href="#">每个人都有一个死角， 自己走不出来，别人也闯不进去。</a>
+					</li>
+					<li>
+						<a href="#">我把最深沉的秘密放在那里。</a>
+					</li>
+					<li>
+						<a href="#">你不懂我，我不怪你。</a>
+					</li>
+				</ul>
+			</div>
+			<h2>2.2.1 代码</h2>
+			<pre class="lemonui-code" linenums="true">
+纯文字列表：
+<ul class="list list-border list-striped">
+  <li>...</li>
+</ul>
+
+链接文字列表：
+<ul class="list list-border list-striped">
+  <li><a href="#">...</a></li>
+</ul>
+</pre>
+
+			<h3>2.3 添加鼠标hover样式</h3>
+			<div>列表添加鼠标hover样式</div>
+			<div class="code-example">
+				纯文字列表：
+				<ul class="list list-border list-striped list-hover">
+					<li>每个人都有一个死角， 自己走不出来，别人也闯不进去。</li>
+					<li>我把最深沉的秘密放在那里。</li>
+					<li>你不懂我，我不怪你。</li>
+				</ul>
+				链接文字列表：
+				<ul class="list list-border list-striped list-hover">
+					<li>
+						<a href="#">每个人都有一个死角， 自己走不出来，别人也闯不进去。</a>
+					</li>
+					<li>
+						<a href="#">我把最深沉的秘密放在那里。</a>
+					</li>
+					<li>
+						<a href="#">你不懂我，我不怪你。</a>
+					</li>
+				</ul>
+			</div>
+			<h2>2.2.1 代码</h2>
+			<pre class="lemonui-code" linenums="true">
+纯文字列表：
+<ul class="list list-border list-striped list-hover">
+  <li>...</li>
+</ul>
+
+链接文字列表：
+<ul class="list list-border list-striped list-hover">
+  <li><a href="#">...</a></li>
+</ul>
+</pre>
+
+			<h2>3 组合使用式</h2>
+			<h3>3.1 组合badge徽章使用</h3>
+			<div>组合badge徽章</div>
+			<div class="code-example">
+				纯文字列表：
+				<ul class="list list-border list-striped list-hover">
+					<li>每个人都有一个死角， 自己走不出来，别人也闯不进去。<label class="badge badge-default">19</label></li>
+					<li>我把最深沉的秘密放在那里。<label class="badge badge-primary">22</label></li>
+					<li>你不懂我，我不怪你。<label class="badge badge-success">36</label></li>
+				</ul>
+				链接文字列表：
+				<ul class="list list-border list-striped list-hover">
+					<li>
+						<a href="#">每个人都有一个死角， 自己走不出来，别人也闯不进去。<label class="badge badge-info">36</label></a>
+					</li>
+					<li>
+						<a href="#">我把最深沉的秘密放在那里。<label class="badge badge-warning">36</label></a>
+					</li>
+					<li>
+						<a href="#">你不懂我，我不怪你。<label class="badge badge-danger">36</label></a>
+					</li>
+				</ul>
+			</div>
+			<h2>3.1.1 代码</h2>
+			<pre class="lemonui-code" linenums="true">
+纯文字列表：
+<ul class="list list-border list-striped list-hover">
+  <li>...<label class="badge badge-info">36</label></li>
+</ul>
+
+链接文字列表：
+<ul class="list list-border list-striped list-hover">
+  <li><a href="#">...<label class="badge badge-info">36</label></a></li>
+</ul>
+</pre>
+
+			<h3>3.2 组合字体图标使用</h3>
+			<div>组合字体图标使用</div>
+			<div class="code-example">
+				纯文字列表：
+				<ul class="list list-border list-striped list-hover">
+					<li><i class="le le-notice"></i>每个人都有一个死角， 自己走不出来，别人也闯不进去。</li>
+					<li><i class="le le-leaf"></i>我把最深沉的秘密放在那里。</li>
+					<li><i class="le le-newspaper"></i>你不懂我，我不怪你。</li>
+				</ul>
+				链接文字列表：
+				<ul class="list list-border list-striped list-hover">
+					<li>
+						<a href="#"><i class="le le-github"></i>每个人都有一个死角， 自己走不出来，别人也闯不进去。</a>
+					</li>
+					<li>
+						<a href="#"><i class="le le-system-config"></i>我把最深沉的秘密放在那里。</a>
+					</li>
+					<li>
+						<a href="#"><i class="le le-batch-auditing"></i>你不懂我，我不怪你。</a>
+					</li>
+				</ul>
+			</div>
+			<h2>3.1.1 代码</h2>
+			<pre class="lemonui-code" linenums="true">
+纯文字列表：
+<ul class="list list-border list-striped list-hover">
+  <li>...<i class="le le-batch-auditing"></i></li>
+</ul>
+
+链接文字列表：
+<ul class="list list-border list-striped list-hover">
+  <li><a href="#">...<i class="le le-batch-auditing"></i></a></li>
+</ul>
+</pre>
+
+			<!-- 文档结束-->
+		</div>
+	</body>

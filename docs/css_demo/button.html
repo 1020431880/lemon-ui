@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+		<title>Lemon-ui示例》CSS》HTML元素》按钮</title>
+		<link rel="stylesheet" href="../css/index.css" />
+		<!--引入lemon-ui的css -->
+		<link rel="stylesheet" href="../../dist/css/lemon-ui.css" />
+		<!--引用jquery -->
+		<script type="text/javascript" src="../../lib/jquery/jquery.min.js"></script>
+		<!--引入lemon-ui的js -->
+		<script type="text/javascript" src="../../dist/js/lemon-ui.js"></script>
+		<!--引入谷歌的prettify代码高亮插件 -->
+		<script type="text/javascript" src="../../lib/prettify/prettify.js"></script>
+		<!--[if lt IE 9]>
+        <script type="text/javascript" src="../../lib/html5.js"></script>
+		<script type="text/javascript" src="../../lib/respond.min.js"></script>
+		<script type="text/javascript" src="../../lib/PIE_IE678.js"></script>
+        <![endif]-->
+	</head>
+
+	<body>
+		<!--顶部内容-->
+		<div class="content-navbar">
+			<span class="breadcrumb">
+				<a href="javascript:void(0);" class="first"><i class="le le-shouye font-13" style="color:#333;"></i>首页</a>
+				<a href="javascript:void(0);" class="second">CSS</a>
+				<a href="javascript:void(0);" class="third">HTML元素</a>
+				<a class="fourth current">按钮</a>
+			</span>
+		</div>
+		<!--页面主要内容-->
+		<div class="main-content-demo">
+
+			<h1>按钮</h1>
+			<hr>
+			<div>默认按钮是<button>btn</button>这样的，很丑。。现在使用lemonui的btn按钮样式来美化。</div>
+			<div class="code-example">
+				<pre class="lemonui-code" linenums="true">
+write your code
+</pre>
+			</div>
+
+			<h2>1.主题</h2>
+			<table class="table table-hd-bg table-bordered">
+				<tr>
+					<th width="20%">按钮效果</th>
+					<th width="30%">按钮class</th>
+					<th width="50%">描述</th>
+				</tr>
+				<tr>
+					<td><input type="button" class="btn btn-default" value="默认" /></td>
+					<td>btn btn-default</td>
+					<td>默认按钮样式</td>
+				</tr>
+				<tr>
+					<td><input type="button" class="btn btn-primary" value="主要" /></td>
+					<td>btn btn-primary</td>
+					<td>主要按钮，用于大多数页面上的功能按钮</td>
+				</tr>
+				<tr>
+					<td><input type="button" class="btn btn-success" value="成功" /></td>
+					<td>btn btn-success</td>
+					<td>表示成功或积极的动作</td>
+				</tr>
+				<tr>
+					<td><input type="button" class="btn btn-info" value="提示" /></td>
+					<td>btn btn-info</td>
+					<td>表示提示性的动作</td>
+				</tr>
+				<tr>
+					<td><input type="button" class="btn btn-warning" value="警告" /></td>
+					<td>btn btn-warning</td>
+					<td>提醒应该谨慎采取这个动作</td>
+				</tr>
+				<tr>
+					<td><input type="button" class="btn btn-danger" value="危险" /></td>
+					<td>btn btn-danger </td>
+					<td>表示这个动作危险或存在危险</td>
+				</tr>
+				<tr>
+					<td><input type="button" class="btn btn-link" value="链接" /></td>
+					<td>btn btn-link </td>
+					<td>简化一个按钮, 使它看起来像一个链接，同时保持按钮的行为</td>
+				</tr>
+				<tr>
+					<td><input type="button" disabled class="btn btn-primary" value="禁用" /></td>
+					<td>btn </td>
+					<td>禁用按钮,禁止点击事件，只需要引用btn样式后添加disabled属性即可</td>
+				</tr>
+				<tr>
+					<td colspan="3">
+						<input type="button" class="btn btn-primary btn-block" value="100%宽度块状按钮" />
+					</td>
+				</tr>
+			</table>
+			<h2>2.空心</h2>
+			<table class="table table-hd-bg table-bordered">
+				<tr>
+					<th width="20%">按钮效果</th>
+					<th width="30%">按钮class</th>
+					<th width="50%">描述</th>
+				</tr>
+				<tr>
+					<td><input type="button" class="btn btn-default-outline" value="默认" /></td>
+					<td>btn btn-default-outline</td>
+					<td>默认按钮样式</td>
+				</tr>
+				<tr>
+					<td><input type="button" class="btn btn-primary-outline" value="主要" /></td>
+					<td>btn btn-primary-outline</td>
+					<td>主要按钮，用于大多数页面上的功能按钮</td>
+				</tr>
+				<tr>
+					<td><input type="button" class="btn btn-success-outline" value="成功" /></td>
+					<td>btn btn-success-outline</td>
+					<td>表示成功或积极的动作</td>
+				</tr>
+				<tr>
+					<td><input type="button" class="btn btn-info-outline" value="提示" /></td>
+					<td>btn btn-info-outline</td>
+					<td>表示提示性的动作</td>
+				</tr>
+				<tr>
+					<td><input type="button" class="btn btn-warning-outline" value="警告" /></td>
+					<td>btn btn-warning-outline</td>
+					<td>提醒应该谨慎采取这个动作</td>
+				</tr>
+				<tr>
+					<td><input type="button" class="btn btn-danger-outline" value="危险" /></td>
+					<td>btn btn-danger-outline </td>
+					<td>表示这个动作危险或存在危险</td>
+				</tr>
+
+			</table>
+			<h2>3.尺寸</h2>
+			<table class="table table-hd-bg table-bordered">
+				<tr>
+					<th width="20%">按钮效果</th>
+					<th width="30%">按钮class</th>
+					<th width="50%">描述</th>
+				</tr>
+				<tr>
+					<td><input type="button" class="btn btn-primary size-large" value="特大按钮" /></td>
+					<td>btn btn-primary size-large</td>
+					<td>特大按钮</td>
+				</tr>
+				<tr>
+					<td><input type="button" class="btn btn-primary size-big" value="大按钮" /></td>
+					<td>btn btn-primary size-big</td>
+					<td>大按钮</td>
+				</tr>
+				<tr>
+					<td><input type="button" class="btn btn-primary" value="默认按钮" /></td>
+					<td>btn btn-primary</td>
+					<td>默认按钮</td>
+				</tr>
+				<tr>
+					<td><input type="button" class="btn btn-primary size-small" value="小型按钮" /></td>
+					<td>btn btn-primary size-small</td>
+					<td>小型按钮</td>
+				</tr>
+				<tr>
+					<td><input type="button" class="btn btn-primary size-mini" value="迷你按钮" /></td>
+					<td>btn btn-primary size-mini</td>
+					<td>迷你按钮</td>
+				</tr>
+			</table>
+			<h2>4.圆角</h2>
+			<table class="table table-hd-bg table-bordered">
+				<tr>
+					<td><input type="button" class="btn btn-primary size-large radius-round" value="特大按钮" /></td>
+					<td>btn btn-primary size-large btn-radius</td>
+					<td>特大按钮的圆角样式</td>
+				</tr>
+				<tr>
+					<td><input type="button" class="btn btn-primary size-big radius-round" value="大按钮" /></td>
+					<td>btn btn-primary size-big btn-radius</td>
+					<td>大按钮的圆角样式</td>
+				</tr>
+				<tr>
+					<td><input type="button" class="btn btn-primary radius-round" value="默认按钮" /></td>
+					<td>btn btn-primary btn-radius</td>
+					<td>默认按钮的圆角样式</td>
+				</tr>
+				<tr>
+					<td><input type="button" class="btn btn-primary size-small radius-round" value="小型按钮" /></td>
+					<td>btn btn-primary size-small btn-radius</td>
+					<td>小型按钮的圆角样式</td>
+				</tr>
+				<tr>
+					<td><input type="button" class="btn btn-primary size-mini radius-round" value="迷你按钮" /></td>
+					<td>btn btn-primary size-mini btn-radius</td>
+					<td>迷你按钮的圆角样式</td>
+				</tr>
+			</table>
+			<h2>5.A链接按钮</h2>
+			<table class="table table-hd-bg table-bordered">
+				<tr>
+					<th width="20%">按钮效果</th>
+					<th width="30%">按钮class</th>
+					<th width="50%">描述</th>
+				</tr>
+				<tr>
+					<td>
+						<a href="#" class="btn btn-default">链接按钮</a>
+					</td>
+					<td>btn btn-default</td>
+					<td>使用A链接也可以添加按钮的样式</td>
+				</tr>
+				<tr>
+					<td>
+						<a href="#" class="btn btn-primary">链接按钮</a>
+					</td>
+					<td>btn btn-primary</td>
+					<td>使用A链接也可以添加按钮的样式</td>
+				</tr>
+				<tr>
+					<td>
+						<a href="#" class="btn btn-warning">链接按钮</a>
+					</td>
+					<td>btn btn-warning</td>
+					<td>使用A链接也可以添加按钮的样式</td>
+				</tr>
+			</table>
+			<h2>6.字体图标按钮</h2>
+			<div class="code-example">
+
+				<button class="btn btn-success">
+					<i class="le le-delete2 le-13px"></i>添加
+				</button>
+				<button class="btn btn-success">
+					<i class="le le-edit le-13px"></i>修改
+				</button>
+				<button class="btn btn-success">
+					<i class="le le-loading le-13px"></i>
+				</button>
+				<button class="btn btn-success">
+					<i class="le le-history le-13px"></i>
+				</button>
+				<button class="btn btn-success">
+					<i class="le le-delete2 le-13px"></i>
+				</button>
+				<button class="btn btn-success">
+					<i class="le le-share-alt le-13px"></i>
+				</button>
+				<button class="btn btn-success">
+					<i class="le le-gears le-13px"></i>
+				</button>
+				<p />
+				<button class="btn btn-default">
+					<i class="le le-format-align-right le-13px" style="color:#333;"></i>
+				</button>
+				<button class="btn btn-default">
+					<i class="le le-format-align-center le-13px" style="color:#333;"></i>
+				</button>
+				<button class="btn btn-default">
+					<i class="le le-format-align-center le-13px" style="color:#333;"></i>
+				</button>
+				<button class="btn btn-default">
+					<i class="le le-format-align-left le-13px" style="color:#333;"></i>
+				</button>
+				<button class="btn btn-default">
+					<i class="le le-format-underline le-13px" style="color:#333;"></i>
+				</button>
+				<button class="btn btn-default">
+					<i class="le le-format-color le-13px" style="color:#333;"></i>
+				</button>
+				<button class="btn btn-default">
+					<i class="le le-format-size le-13px" style="color:#333;"></i>
+				</button>
+			</div>
+			<h3>6.1字体图标按钮应用</h3>
+			<pre class="lemonui-code" linenums="true">
+<button class="btn btn-success"><i class="le le-add le-13px"></i>添加</button>
+<button class="btn btn-default"><i class="le le-format-size le-13px" style="color:#333;"></i></button>
+</pre> 注：除了引用默认的
+			<i></i>字体图标以外，还可以给字体图标使用style添加颜色，大小等
+			<p />
+		</div>
+	</body>

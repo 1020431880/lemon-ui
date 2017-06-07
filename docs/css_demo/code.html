@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+		<title>Lemon-ui示例》CSS》HTML元素》代码</title>
+		<link rel="stylesheet" href="../css/index.css" />
+		<!--引入lemon-ui的css -->
+		<link rel="stylesheet" href="../../dist/css/lemon-ui.css" />
+		<!--引用jquery -->
+		<script type="text/javascript" src="../../lib/jquery/jquery.min.js"></script>
+		<!--引入lemon-ui的js -->
+		<script type="text/javascript" src="../../dist/js/lemon-ui.js"></script>
+		<!--引入谷歌的prettify代码高亮插件 -->
+		<script type="text/javascript" src="../../lib/prettify/prettify.js"></script>
+		<!--[if lt IE 9]>
+        <script type="text/javascript" src="../../lib/html5.js"></script>
+		<script type="text/javascript" src="../../lib/respond.min.js"></script>
+		<script type="text/javascript" src="../../lib/PIE_IE678.js"></script>
+        <![endif]-->
+	</head>
+
+	<body>
+		<!--顶部内容-->
+		<div class="content-navbar">
+			<span class="breadcrumb">
+				<a href="javascript:void(0);" class="first"><i class="le le-shouye font-13" style="color:#333;"></i>首页</a>
+				<a href="javascript:void(0);" class="second">CSS</a>
+				<a href="javascript:void(0);" class="third">HTML元素</a>
+				<a class="fourth current">代码</a>
+			</span>
+		</div>
+		<!--页面主要内容-->
+		<div class="main-content-demo">
+
+			<h1>代码</h1>
+			<hr>
+			<div>使用了 google prettify.js 来实现代码的高亮显示。prettify 非常小巧且配置简单，使用它来实现代码的高亮显示是个不错的选择，使用十分简单。</div>
+			<div class="code-example">
+				<pre class="lemonui-code" linenums="true">
+write your code
+</pre>
+			</div>
+
+			<h2>1.HTML代码</h2>
+			<div>使用代码样式模块需要引用<code>.lemonui-code</code>的样式，如果需要在左侧显示行号，需要添加属性<code>linenums="true"</code>，如果不需要行号则<code>linenums="false"</code>或者不写</div>
+			<pre class="lemonui-code" linenums="true">
+&lt;pre class="lemonui-code" linenums="true">write your code&lt;/pre>
+</pre>
+
+			<h2>2.JS代码</h2>
+			<div>prettify.js 依赖jquery库。所以需要同时引入 jQuery 文件和 prettify.js 文件</div>
+			<pre class="lemonui-code" linenums="true">
+&lt;script type="text/javascript" src="lib/jquery/jquery.min.js">&lt;/script>
+&lt;script type="text/javascript" src="lib/prettify/prettify.js">&lt;/script>
+</pre>
+		</div>
+	</body>
